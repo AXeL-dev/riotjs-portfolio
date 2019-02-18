@@ -17,7 +17,6 @@
 	$(window).on('resize', function(){
 		initHeroHeight();
 		initPortfolioResize();
-		initContactMapHeight();
 	});
 
 
@@ -26,7 +25,6 @@
 	 --------------------------------------------- */
 	$(window).on('scroll', function(){
 		initHeaderAnimation();
-		initSearchAreaHide();
 	});
 
 
