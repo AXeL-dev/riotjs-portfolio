@@ -1,25 +1,37 @@
 
-/* ---------------------------------------------
- Mount Riot Tags (To know: riot mouting is synchronous)
- --------------------------------------------- */
-riot.mount('preloader, header, footer');
+
+riot.compile(function() {
+
+    /* ---------------------------------------------
+     Mount Riot Tags
+     --------------------------------------------- */
+    riot.mount('preloader, header, footer');
 
 
-/* ---------------------------------------------
- Mount Nav Menu Tag
- --------------------------------------------- */
-riot.mount('nav-menu', { use_links: true });
+    /* ---------------------------------------------
+     Mount Nav Menu Tag
+     --------------------------------------------- */
+    riot.mount('nav-menu', { use_links: true });
 
 
-/* ---------------------------------------------
- Mount Top Section Tag
- --------------------------------------------- */
-riot.mount('top-section', { title: 'Portfolio' });
+    /* ---------------------------------------------
+     Mount Top Section Tag
+     --------------------------------------------- */
+    riot.mount('top-section', { title: 'Portfolio' });
 
 
-/* ---------------------------------------------
- Mount Portfolio Section Tag
- --------------------------------------------- */
-riot.mount('main-section', 'portfolio-section', {
-    filter_class: 'mgt-0 mgb-50'
+    /* ---------------------------------------------
+     Mount Portfolio Section Tag
+     --------------------------------------------- */
+    riot.mount('main-section', 'portfolio-section', {
+        filter_class: 'mgt-0 mgb-50'
+    });
+
+
+    /* ---------------------------------------------
+     Initialize Custom JS
+     --------------------------------------------- */
+    console.log('initializing cutsom js');
+    initAll();
+
 });
