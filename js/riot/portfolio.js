@@ -2,7 +2,7 @@
 /* ---------------------------------------------
  Mount Riot Tags
  --------------------------------------------- */
-riot.mount('preloader, header');
+riot.mount('preloader, header, footer');
 
 
 /* ---------------------------------------------
@@ -23,9 +23,3 @@ riot.mount('top-section', { title: 'Portfolio' });
 riot.mount('main-section', 'portfolio-section', {
     filter_class: 'mgt-0 mgb-50'
 });
-
-
-/* ---------------------------------------------
- Mount Footer Tag (keep at the end to correctly load custom js)
- --------------------------------------------- */
-riot.mount('footer');
