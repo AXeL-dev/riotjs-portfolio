@@ -26,20 +26,11 @@
         function initNavMenu(){
             $('.hero-height').height($(window).height());
 
-            $(document).ready(function(){
-                $('.menu-bar').on('click', function(){
-                    if($('.main-nav').hasClass('hidden')){
-                        $('.main-nav').removeClass('hidden');
-                        $('.main-nav').addClass('active');
-                    }
-                });
-
-                $('.menu-close').on('click', function(){
-                    if($('.main-nav').hasClass('active')){
-                        $('.main-nav').removeClass('active');
-                        $('.main-nav').addClass('hidden');
-                    }
-                });
+            $('.menu-close').on('click', function(){
+                if($('.main-nav').hasClass('active')){
+                    $('.main-nav').removeClass('active');
+                    $('.main-nav').addClass('hidden');
+                }
             });
         }
     </script>

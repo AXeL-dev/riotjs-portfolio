@@ -11,6 +11,13 @@
             $(window).on('scroll', function(){
                 initHeaderAnimation();
             });
+
+            $('.menu-bar').on('click', function(){
+                if($('.main-nav').hasClass('hidden')){
+                    $('.main-nav').removeClass('hidden');
+                    $('.main-nav').addClass('active');
+                }
+            });
         });
 
         /* ---------------------------------------------
