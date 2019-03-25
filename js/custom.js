@@ -7,12 +7,12 @@
      Initializing Functions Triggered On Window Load
      --------------------------------------------- */
     $(window).on('load', function(){
-        alert('loaded');
+        console.log('loaded');
         initPreloaderFade();
     });
 
     $(document).ready(function() {
-        alert('ready');
+        console.log('ready');
     });
 
 
