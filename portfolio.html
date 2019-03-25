@@ -1,730 +1,85 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta charset="UTF-8">
-		<meta name="author" content="AXeL-dev">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Portfolio</title>
-		<link rel="shortcut icon" href="img/favicon.ico">
-		<link type="text/css" rel="stylesheet" media="all" href="css/css_002.css">
-		<link type="text/css" rel="stylesheet" media="all" href="css/css_003.css">
-		<link type="text/css" rel="stylesheet" media="all" href="css/css.css">
-		<link type="text/css" rel="stylesheet" media="all" href="css/font-awesome.min.css">
-		<link type="text/css" rel="stylesheet" media="all" href="css/animate.css">
-		<link type="text/css" rel="stylesheet" media="all" href="css/materialize.css">
-		<link type="text/css" rel="stylesheet" media="all" href="css/magnific-popup.css">
-		<link type="text/css" rel="stylesheet" media="all" href="css/owl_002.css">
-		<link type="text/css" rel="stylesheet" media="all" href="css/owl_003.css">
-		<link type="text/css" rel="stylesheet" media="all" href="css/owl.css">
-		<link type="text/css" rel="stylesheet" media="all" href="css/style.css">
-		<link id="tile-colorscheme-css" type="text/css" rel="stylesheet" media="all" href="css/color-2.css">
-		<link type="text/css" rel="stylesheet" media="all" href="css/responsive.css">
-	</head>
-	<body>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta charset="UTF-8">
+        <meta name="author" content="AXeL-dev">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link type="text/css" rel="stylesheet" media="all" href="css/css_002.css">
+        <link type="text/css" rel="stylesheet" media="all" href="css/css_003.css">
+        <link type="text/css" rel="stylesheet" media="all" href="css/css.css">
+        <link type="text/css" rel="stylesheet" media="all" href="css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" media="all" href="css/animate.css">
+        <link type="text/css" rel="stylesheet" media="all" href="css/materialize.css">
+        <link type="text/css" rel="stylesheet" media="all" href="css/magnific-popup.css">
+        <link type="text/css" rel="stylesheet" media="all" href="css/owl_002.css">
+        <link type="text/css" rel="stylesheet" media="all" href="css/owl_003.css">
+        <link type="text/css" rel="stylesheet" media="all" href="css/owl.css">
+        <link type="text/css" rel="stylesheet" media="all" href="css/style.css">
+        <link id="tile-colorscheme-css" type="text/css" rel="stylesheet" media="all" href="css/color-2.css">
+        <link type="text/css" rel="stylesheet" media="all" href="css/responsive.css">
+    </head>
+    <body>
 
-		<!-- Preloader -->
-		<div class="preloader">
-			<div class="preloader-inner">
-				<div class="preloader-wrapper active">
-					<div class="spinner-layer">
-						<div class="circle-clipper left">
-							<div class="circle"></div>
-						</div>
-						<div class="gap-patch">
-							<div class="circle"></div>
-						</div>
-						<div class="circle-clipper right">
-							<div class="circle"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ Preloader -->
+        <!-- Preloader -->
+        <div data-is="preloader" class="preloader"></div>
+        <!--/ Preloader -->
 
 
-		<!-- Header -->
-		<header class="header shadow-bg header-hidden">
-			<div class="site-logo"><a href="#0" class="animatescroll-link" onclick="$('html').animatescroll();">AXeL-dev</a></div>
-			<div class="menu-bar waves-effect waves-light"><span class="fa fa-bars"></span></div>
-		</header>
-		<!--/ Header -->
+        <!-- Header -->
+        <header data-is="header" class="header shadow-bg header-hidden"></header>
+        <!--/ Header -->
 
 
-		<!-- Nav Menu -->
-		<nav class="main-nav hidden hero-height">
-			<div class="menu-close waves-effect waves-light"><span class="fa fa-times"></span></div>
-			<ul>
-				<li><a href="index.html#0" class="animatescroll-link">Home</a></li>
-				<li><a href="index.html#skill-section" class="skill-section-nav animatescroll-link">Skill</a></li>
-				<li><a href="index.html#education-section" class="education-section-nav animatescroll-link">Education</a></li>
-				<li><a href="index.html#experience-section" class="experience-section-nav animatescroll-link">Experience</a></li>
-				<li><a href="index.html#portfolio-section" class="portfolio-section-nav animatescroll-link">Portfolio</a></li>
-			</ul>
-		</nav>
-		<!--/ Nav Menu -->
+        <!-- Nav Menu -->
+        <nav data-is="nav-menu" class="main-nav hidden hero-height"></nav>
+        <!--/ Nav Menu -->
 
 
-		<!-- Top Section -->
-		<div class="site-header top-section image-bg parallax-section" data-image-bg="img/bg-2.jpg">
-			<div class="overlay-section">
-				<div class="container">
-					<div class="row">
-						<div class="col s12">
-							<div class="site-header-title">
-								Portfolio
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/ Top Section -->
+        <!-- Top Section -->
+        <div data-is="top-section" class="site-header top-section image-bg parallax-section" data-image-bg="img/bg-2.jpg"></div>
+        <!--/ Top Section -->
 
 
-		<!-- Main Section -->
-		<section id="all-portfolio-section" class="all-portfolio-section">
-			<div class="container">
-				<div class="row">
-
-					<div class="col s12">					
-						<ul class="filter mgt-0 mgb-50">
-							<li><a class="active" href="#" data-filter="*">All</a></li>
-							<li><a href="#" data-filter=".python">Python</a></li>
-							<li><a href="#" data-filter=".c">C</a></li>
-							<li><a href="#" data-filter=".cplusplus">C++</a></li>
-							<li><a href="#" data-filter=".csharp">C#</a></li>
-							<li><a href="#" data-filter=".php">PHP</a></li>
-							<li><a href="#" data-filter=".javascript">Javascript</a></li>
-							<li><a href="#" data-filter=".asp">ASP.Net</a></li>
-						</ul>
-						
-						<ul class="portfolio-items isotope">
-
-							<!-- Single Portfolio -->
-							<li class="php asp javascript portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/anime-site.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>PHP</p>
-												<p>ASP.Net</p>
-												<p>Javascript</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/anime-site">Anime website</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/anime-site.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/anime-site" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="php portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/codeigniter-starter.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>PHP</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/CodeIgniter-Starter">CodeIgniter Starter</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/codeigniter-starter.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/CodeIgniter-Starter" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="asp portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/dentale-care.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>ASP.Net MVC</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/Dentale-Care">Dentale Care</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/dentale-care.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/Dentale-Care" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="php portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/zte-sat-tool.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>PHP</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/ZTE-SAT-Tool">ZTE SAT Tool</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/zte-sat-tool.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/ZTE-SAT-Tool" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="python portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/dindo-bot.gif" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>Python</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/Dindo-Bot">Dindo Bot</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/dindo-bot.gif"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/Dindo-Bot/tree/v1.x" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="javascript portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/distract-me-not.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>Javascript</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/distract-me-not">Distract Me Not</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/distract-me-not.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/distract-me-not" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="php javascript portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/dolibarr.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>PHP</p>
-												<p>Javascript</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel">Dolibarr Modules</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/dolibarr.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="python portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/silaty.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>Python</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/Silaty">Silaty</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/silaty.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/Silaty" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="javascript portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/design-helper.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>Javascript</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/design-helper-site">Design Helper</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/design-helper.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/design-helper-site" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="php javascript portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/dolibase.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>PHP</p>
-												<p>Javascript</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/dolibase">Dolibase Framework</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/dolibase.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/dolibase" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="c portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/winsk.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/WinSk">WinSk</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/winsk.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/WinSk" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="c portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/super-naruto.jpg" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/super-naruto">Super Naruto</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/super-naruto.jpg"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/super-naruto" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="python portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/xampp-indicator.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>Python</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/xampp-indicator">XAMPP Indicator</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/xampp-indicator.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/xampp-indicator" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="csharp portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/pixus-bot.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C#</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/Pixus-Bot">Pixus Bot</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/pixus-bot.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/Pixus-Bot" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="csharp portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/steganography-app.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C#</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/app_steganographie">Steganography App</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/steganography-app.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/app_steganographie" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="csharp portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/customer-management.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C#</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/Gestion-Client">Customer Management</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/customer-management.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/Gestion-Client" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="c portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/ImpScreen.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/ImpScreen">ImpScreen</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/ImpScreen.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/ImpScreen" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="c portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/timetoshutdown.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/TimeToShutdown">TimeToShutdown</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/timetoshutdown.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/TimeToShutdown" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="c portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/websiteblocker.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/WebSiteBlocker">WebSiteBlocker</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/websiteblocker.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/WebSiteBlocker" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="c portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/locker.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/Locker">Locker</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/locker.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/Locker" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="c portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/WinIDE.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/WinIDE">WinIDE</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/WinIDE.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/WinIDE" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="c portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/mp3-player.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/Lecteur-mp3">MP3 Player</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/mp3-player.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/Lecteur-mp3" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="c portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/syncpainter.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/syncpainter">SyncPainter</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/syncpainter.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/syncpainter" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-							<!-- Single Portfolio -->
-							<li class="cplusplus portfolio-content shadow-bg isotope-item">
-								<figure>
-									<img src="img/projects/QChat.png" alt="">
-									<figcaption>
-										<div class="portfolio-intro">
-											<div class="portfolio-intro-category">
-												<p>C++</p>
-											</div>
-											<div class="portfolio-intro-title">
-												<a href="https://github.com/AXeL-dev/QChat">QChat</a>
-											</div>
-											<div class="portfolio-intro-image">
-												<a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="img/projects/QChat.png"><span class="fa fa-picture-o"></span></a>
-											</div>
-											<div class="portfolio-intro-detail">
-												<a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="https://github.com/AXeL-dev/QChat" target="_blank"><span class="fa fa-link"></span></a>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</li>
-							<!--/ Single Portfolio -->
-
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--/ Main Section -->
+        <!-- Main Section -->
+        <section data-is="main-section" id="all-portfolio-section" class="all-portfolio-section"></section>
+        <!--/ Main Section -->
 
 
-		<!-- Footer Section -->
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col s12 back-to-top-wrapper">
-						<a class="btn-circle  waves-effect back-to-top tooltipped animatescroll-link wow zoomIn animated" data-wow-duration="0.7s" data-wow-delay="0.3s" data-wow-offset="0" data-position="top" data-delay="50" data-tooltip="Go To Top" onclick="$('html').animatescroll();" href="#0">
-							<span class="fa fa-angle-up"></span>
-						</a>
-						<div class="copyright-text">
-							© All rights Reserved.
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!--/ Footer Section -->
+        <!-- Footer Section -->
+        <footer data-is="footer" class="footer"></footer>
+        <!--/ Footer Section -->
 
 
-		<script type="text/javascript" src="js/modernizr.js"></script>
-		<script type="text/javascript" src="js/jquery-2.js"></script>
-		<script type="text/javascript" src="js/animatescroll.js"></script>
-		<script type="text/javascript" src="js/materialize.js"></script>
-		<script type="text/javascript" src="js/device.js"></script>
-		<script type="text/javascript" src="js/parallax.js"></script>
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/imagesloaded.js"></script>
-		<script type="text/javascript" src="js/isotope.js"></script>
-		<script type="text/javascript" src="js/magnific-popup.js"></script>
-		<script type="text/javascript" src="js/masonry.js"></script>
-		<script type="text/javascript" src="js/owl.js"></script>
-		<script type="text/javascript" src="js/smoothscroll.js"></script>
-		<script type="text/javascript" src="js/waypoints.js"></script>
-		<script type="text/javascript" src="js/wow.js"></script>
-		<script type="text/javascript" src="js/custom.js"></script>
-	</body>
+        <!-- include riot.js & required tags -->
+        <script type="riot/tag" src="tag/preloader.tag.html"></script>
+        <script type="riot/tag" src="tag/header.tag.html"></script>
+        <script type="riot/tag" src="tag/nav-menu.tag.html"></script>
+        <script type="riot/tag" src="tag/top-section.tag.html"></script>
+        <script type="riot/tag" src="tag/portfolio-section.tag.html"></script>
+        <script type="riot/tag" src="tag/footer.tag.html"></script>
+        <script src="js/riot+compiler.min.js"></script>
+        <script src="js/riot/portfolio.js"></script>
+        <!-- include the rest of js libraries/files -->
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript" src="js/jquery-2.js"></script>
+        <script type="text/javascript" src="js/animatescroll.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/device.js"></script>
+        <script type="text/javascript" src="js/parallax.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/imagesloaded.js"></script>
+        <script type="text/javascript" src="js/isotope.js"></script>
+        <script type="text/javascript" src="js/magnific-popup.js"></script>
+        <script type="text/javascript" src="js/masonry.js"></script>
+        <script type="text/javascript" src="js/owl.js"></script>
+        <script type="text/javascript" src="js/smoothscroll.js"></script>
+        <script type="text/javascript" src="js/waypoints.js"></script>
+        <script type="text/javascript" src="js/wow.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </body>
 </html>

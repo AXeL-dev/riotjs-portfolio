@@ -1,0 +1,287 @@
+<portfolio-section>
+    <div class="container">
+        <div class="row">
+            <div if="{ opts.title }" class="col s12 section-title">
+                <h2>{ opts.title }</h2>
+            </div>
+            <div class="col s12">
+                <div class="col s12 section-content pd-0">
+                    <ul class="filter{ opts.filter_class ? ' ' + opts.filter_class : '' }">
+                        <li><a class="active" href="#" data-filter="*">All</a></li>
+                        <li each="{ item in filters }"><a href="#" data-filter="{ item.filter }">{ item.name }</a></li>
+                    </ul>
+
+                    <ul class="portfolio-items isotope">
+
+                        <!-- Single Portfolio -->
+                        <li each="{ project, index in projects }" class="{ project.class }portfolio-content shadow-bg isotope-item">
+                            <figure>
+                                <img src="{ project.image }" alt="{ project.name }"/>
+                                <figcaption>
+                                    <div class="portfolio-intro">
+                                        <div class="portfolio-intro-category">
+                                            <p each="{ category in project.category }">{ category }</p>
+                                        </div>
+                                        <div class="portfolio-intro-title">
+                                            <a href="{ project.link }">{ project.name }</a>
+                                        </div>
+                                        <div class="portfolio-intro-image">
+                                            <a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="{ project.image }"><span class="fa fa-picture-o"></span></a>
+                                        </div>
+                                        <div class="portfolio-intro-detail">
+                                            <a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="{ project.link }" target="_blank"><span class="fa fa-link"></span></a>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <!--/ Single Portfolio -->
+
+                    </ul>
+                </div>
+                <div if="{ opts.max }" class="col s12 portfolio-all al-center">
+                    <a href="portfolio.html" class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="All Portfolio"><span></span><span></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tag = this;
+
+        // List of projects categories
+        tag.categories = {
+            'Python': 'python',
+            'C': 'c',
+            'C++': 'cplusplus',
+            'C#': 'csharp',
+            'PHP': 'php',
+            'Javascript': 'js',
+            'ASP.Net': 'asp'
+        };
+
+        // Generate filters when not provided
+        if (opts.filters) {
+            tag.filters = opts.filters;
+        }
+        else {
+            tag.filters = [];
+            Object.keys(tag.categories).forEach(function (category) {
+                tag.filters.push({ name: category, filter: '.' + tag.categories[category] });
+            });
+        }
+
+        // List of projects
+        tag.projects = [
+            {
+                name: 'Anime website',
+                image: 'img/projects/anime-site.png',
+                link : 'https://github.com/AXeL-dev/anime-site',
+                category: [
+                    'PHP',
+                    'ASP.Net',
+                    'Javascript'
+                ]
+            },
+            {
+                name: 'CodeIgniter Starter',
+                image: 'img/projects/codeigniter-starter.png',
+                link : 'https://github.com/AXeL-dev/CodeIgniter-Starter',
+                category: [
+                    'PHP'
+                ]
+            },
+            {
+                name: 'Dentale Care',
+                image: 'img/projects/dentale-care.png',
+                link : 'https://github.com/AXeL-dev/Dentale-Care',
+                category: [
+                    'ASP.Net'
+                ]
+            },
+            {
+                name: 'ZTE SAT Tool',
+                image: 'img/projects/zte-sat-tool.png',
+                link : 'https://github.com/AXeL-dev/ZTE-SAT-Tool',
+                category: [
+                    'PHP'
+                ]
+            },
+            {
+                name: 'Dindo Bot',
+                image: 'img/projects/dindo-bot.gif',
+                link : 'https://github.com/AXeL-dev/Dindo-Bot',
+                category: [
+                    'Python'
+                ]
+            },
+            {
+                name: 'Distract Me Not',
+                image: 'img/projects/distract-me-not.png',
+                link : 'https://github.com/AXeL-dev/distract-me-not',
+                category: [
+                    'Javascript'
+                ]
+            },
+            {
+                name: 'Dolibarr Modules',
+                image: 'img/projects/dolibarr.png',
+                link : decodeURIComponent('https://www.dolistore.com/en/search?orderby=position%26orderway=desc%26search_query=axel'), // "and" character seems to trigger an error on riot compiler
+                category: [
+                    'PHP',
+                    'Javascript'
+                ]
+            },
+            {
+                name: 'Silaty',
+                image: 'img/projects/silaty.png',
+                link : 'https://github.com/AXeL-dev/Silaty',
+                category: [
+                    'Python'
+                ]
+            },
+            {
+                name: 'Design Helper',
+                image: 'img/projects/design-helper.png',
+                link : 'https://github.com/AXeL-dev/design-helper-site',
+                category: [
+                    'Javascript'
+                ]
+            },
+            {
+                name: 'Dolibase Framework',
+                image: 'img/projects/dolibase.png',
+                link : 'https://github.com/AXeL-dev/dolibase',
+                category: [
+                    'PHP',
+                    'Javascript'
+                ]
+            },
+            {
+                name: 'WinSk',
+                image: 'img/projects/winsk.png',
+                link : 'https://github.com/AXeL-dev/WinSk',
+                category: [
+                    'C'
+                ]
+            },
+            {
+                name: 'Super Naruto',
+                image: 'img/projects/super-naruto.jpg',
+                link : 'https://github.com/AXeL-dev/super-naruto',
+                category: [
+                    'C'
+                ]
+            },
+            {
+                name: 'XAMPP Indicator',
+                image: 'img/projects/xampp-indicator.png',
+                link : 'https://github.com/AXeL-dev/xampp-indicator',
+                category: [
+                    'Python'
+                ]
+            },
+            {
+                name: 'Pixus Bot',
+                image: 'img/projects/pixus-bot.png',
+                link : 'https://github.com/AXeL-dev/Pixus-Bot',
+                category: [
+                    'C#'
+                ]
+            },
+            {
+                name: 'Steganography App',
+                image: 'img/projects/steganography-app.png',
+                link : 'https://github.com/AXeL-dev/app_steganographie',
+                category: [
+                    'C#'
+                ]
+            },
+            {
+                name: 'Customer Management',
+                image: 'img/projects/customer-management.png',
+                link : 'https://github.com/AXeL-dev/Gestion-Client',
+                category: [
+                    'C#'
+                ]
+            },
+            {
+                name: 'ImpScreen',
+                image: 'img/projects/ImpScreen.png',
+                link : 'https://github.com/AXeL-dev/ImpScreen',
+                category: [
+                    'C'
+                ]
+            },
+            {
+                name: 'TimeToShutdown',
+                image: 'img/projects/timetoshutdown.png',
+                link : 'https://github.com/AXeL-dev/TimeToShutdown',
+                category: [
+                    'C'
+                ]
+            },
+            {
+                name: 'WebSiteBlocker',
+                image: 'img/projects/websiteblocker.png',
+                link : 'https://github.com/AXeL-dev/WebSiteBlocker',
+                category: [
+                    'C'
+                ]
+            },
+            {
+                name: 'Locker',
+                image: 'img/projects/locker.png',
+                link : 'https://github.com/AXeL-dev/Locker',
+                category: [
+                    'C'
+                ]
+            },
+            {
+                name: 'WinIDE',
+                image: 'img/projects/WinIDE.png',
+                link : 'https://github.com/AXeL-dev/WinIDE',
+                category: [
+                    'C'
+                ]
+            },
+            {
+                name: 'MP3 Player',
+                image: 'img/projects/mp3-player.png',
+                link : 'https://github.com/AXeL-dev/Lecteur-mp3',
+                category: [
+                    'C'
+                ]
+            },
+            {
+                name: 'SyncPainter',
+                image: 'img/projects/syncpainter.png',
+                link : 'https://github.com/AXeL-dev/syncpainter',
+                category: [
+                    'C'
+                ]
+            },
+            {
+                name: 'QChat',
+                image: 'img/projects/QChat.png',
+                link : 'https://github.com/AXeL-dev/QChat',
+                category: [
+                    'C++'
+                ]
+            }
+        ];
+
+        // Splice projects array if a max value is provided
+        if (opts.max) {
+            this.projects.splice(opts.max, this.projects.length - opts.max);
+        }
+
+        // Generate projects classes
+        tag.projects.forEach(function (project) {
+            project.class = '';
+            project.category.forEach(function (category) {
+                project.class += tag.categories[category] + ' ';
+            });
+        });
+    </script>
+</portfolio-section>

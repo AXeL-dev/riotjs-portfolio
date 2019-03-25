@@ -1,0 +1,59 @@
+<skill-section>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 section-title">
+                <h2>Skill</h2>
+            </div>
+            <div class="col s12">
+                <div class="col s12 section-content skill-wrapper w-block shadow-bg pdt-50 pdr-40 pdb-50 pdl-40">
+                    
+                    <!-- Progress bar Left -->
+                    <div class="col l6 s12 skill-data">
+
+                        <!-- Single Skill -->
+                        <div each="{ skill in skills }" if="{ skill.position == 'left' || !skill.position }" class="progress-bar-wrapper">
+                            <p class="progress-text">{ skill.name }<span>{ skill.progress }%</span>
+                            </p>
+                            <div class="progress-bar">
+                                <span data-percent="{ skill.progress }"></span>
+                            </div>
+                        </div>
+                        <!--/ Single Skill -->
+
+                    </div>
+                    <!--/ Progress bar Left -->
+
+                    <!-- Progress bar Right -->
+                    <div class="col l6 s12 skill-data skill-data-alt">
+
+                        <!-- Single Skill -->
+                        <div each="{ skill in skills }" if="{ skill.position == 'right' }" class="progress-bar-wrapper">
+                            <p class="progress-text">{ skill.name }<span>{ skill.progress }%</span>
+                            </p>
+                            <div class="progress-bar">
+                                <span data-percent="{ skill.progress }"></span>
+                            </div>
+                        </div>
+                        <!--/ Single Skill -->
+
+                    </div>
+                    <!--/ Progress bar Right -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        this.skills = [
+            { name: 'C', progress: 80 },
+            { name: 'C++', progress: 60 },
+            { name: 'Python', progress: 70 },
+            { name: 'Javascript', progress: 80 },
+            { name: 'PHP', progress: 95, position: 'right' },
+            { name: 'SQL', progress: 85, position: 'right' },
+            { name: 'Java', progress: 40, position: 'right' },
+            { name: '.NET / C#', progress: 60, position: 'right' }
+        ];
+    </script>
+</skill-section>
