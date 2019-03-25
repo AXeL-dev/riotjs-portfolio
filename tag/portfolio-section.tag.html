@@ -286,59 +286,7 @@
 
         // On mount event
         tag.on('mount', function() {
-            $(window).on('resize', function(){
-                initPortfolioResize();
-            });
-            initPortfolio();
+            alert('portfolio-section');
         });
-
-        /* ---------------------------------------------
-         Portfolio Resize
-         --------------------------------------------- */
-        function initPortfolioResize(){
-            $('.portfolio-items').isotope({
-                filter  : $('.filter').find('a.active').attr('data-filter'),
-                animationOptions: {
-                    duration: 750,
-                    queue: false
-                }
-            });
-            return false;
-        }
-
-        /* ---------------------------------------------
-         Portfolio
-         --------------------------------------------- */
-        function initPortfolio(){
-            $('.portfolio-items').imagesLoaded(function(){
-                $('.portfolio-items').show();
-                $('.portfolio-items').isotope({
-                    filter:'*',
-                    layoutMode:'masonry',
-                    animationOptions:{
-                        duration:750,
-                        easing:'linear'
-                    }
-                });
-            });
-
-            $('.filter').find('a').on('click', function(){
-                $('.portfolio-items').isotope({
-                    filter  : $(this).attr('data-filter'),
-                    animationOptions: {
-                        duration: 750,
-                        queue: false
-                    }
-                });
-                return false;
-            });
-
-            $('.filter a').on('click', function(){
-                if (!$(this).hasClass('active')){
-                    $('.filter a').removeClass('active');
-                    $(this).addClass('active');
-                }
-            });
-        }
     </script>
 </portfolio-section>

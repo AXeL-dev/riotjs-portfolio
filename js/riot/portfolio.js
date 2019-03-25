@@ -1,8 +1,8 @@
 
 /* ---------------------------------------------
- Mount Riot Tags
+ Mount Riot Tags (To know: riots mouting is synchronous)
  --------------------------------------------- */
-riot.mount('preloader, header');
+riot.mount('preloader, header, footer');
 
 
 /* ---------------------------------------------
@@ -23,9 +23,3 @@ riot.mount('top-section', { title: 'Portfolio' });
 riot.mount('main-section', 'portfolio-section', {
     filter_class: 'mgt-0 mgb-50'
 });
-
-
-/* ---------------------------------------------
- Mount Footer Tag (keep at the end to load custom js correctly)
- --------------------------------------------- */
-riot.mount('footer');

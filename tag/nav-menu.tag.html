@@ -17,21 +17,7 @@
         ];
 
         this.on('mount', function() {
-            initNavMenu();
+            alert('nav-menu');
         });
-
-        /* ---------------------------------------------
-         Navigation Menu
-         --------------------------------------------- */
-        function initNavMenu(){
-            $('.hero-height').height($(window).height());
-
-            $('.menu-close').on('click', function(){
-                if($('.main-nav').hasClass('active')){
-                    $('.main-nav').removeClass('active');
-                    $('.main-nav').addClass('hidden');
-                }
-            });
-        }
     </script>
 </nav-menu>

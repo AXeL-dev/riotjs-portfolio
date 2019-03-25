@@ -17,33 +17,7 @@
 
     <script>
         this.on('mount', function() {
-            $(window).on('load', function(){
-                initImageBackground();
-                initPreloaderFade();
-            });
+            alert('preloader');
         });
-
-        /* ---------------------------------------------
-         Preloader Fadeout
-         --------------------------------------------- */
-        function initPreloaderFade(){
-            $('.preloader').fadeOut();
-        }
-
-        /* ---------------------------------------------
-         Image Background
-         --------------------------------------------- */
-        function initImageBackground(){
-            $(".image-bg").each(function(){
-                if($(this).attr("data-image-bg")){
-                    $(this).css({
-                        "background": "url(" + $(this).data("image-bg") + ")",
-                        'background-position': 'center top',
-                        'background-repeat': 'no-repeat',
-                        'background-size': 'cover'
-                    });
-                }
-            });
-        }
     </script>
 </preloader>
