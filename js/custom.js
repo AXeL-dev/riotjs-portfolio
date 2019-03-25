@@ -7,20 +7,12 @@
      Initializing Functions Triggered On Window Load
      --------------------------------------------- */
     $(window).on('load', function(){
+        alert('loaded');
         initPreloaderFade();
-        initHeroHeight();
-        initParallax();
-        initSectionHighlight();
-        initImageBackground();
-        initAnimateScroll();
-        initNavMenu();
-        initMagnificPopup();
-        initPortfolio();
-        initMasonry();
-        initProgressBar();
-        initCarousel();
-        initWowAnimation();
-        initMiscellaneous();
+    });
+
+    $(document).ready(function() {
+        alert('ready');
     });
 
 
@@ -39,6 +31,24 @@
     $(window).on('scroll', function(){
         initHeaderAnimation();
     });
+
+
+    /* ---------------------------------------------
+     Initializing All Functions When DOM Is Ready
+     --------------------------------------------- */
+    initHeroHeight();
+    initParallax();
+    initSectionHighlight();
+    initImageBackground();
+    initAnimateScroll();
+    initNavMenu();
+    initMagnificPopup();
+    initPortfolio();
+    initMasonry();
+    initProgressBar();
+    initCarousel();
+    initWowAnimation();
+    initMiscellaneous();
 
 
     /* ---------------------------------------------

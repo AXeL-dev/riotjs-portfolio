@@ -283,5 +283,10 @@
                 project.class += tag.categories[category] + ' ';
             });
         });
+
+        // On mount event
+        tag.on('mount', function() {
+            alert('portfolio-section');
+        });
     </script>
 </portfolio-section>
