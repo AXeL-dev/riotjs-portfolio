@@ -7,7 +7,10 @@
      --------------------------------------------- */
     $(window).on('load', function(){
         console.log('window loaded');
-        initPreloaderFade();
+        $(document).ready(function () {
+            console.log('document is ready');
+            initPreloaderFade();
+        });
     });
 
 
