@@ -17,15 +17,28 @@
             console.log('footer tag mounted');
 
             /* ---------------------------------------------
+             Initializing All Functions
+             --------------------------------------------- */
+            initHeroHeight();
+            initParallax();
+            initSectionHighlight();
+            initImageBackground();
+            initAnimateScroll();
+            initNavMenu();
+            initMagnificPopup();
+            initPortfolio();
+            initMasonry();
+            initProgressBar();
+            initCarousel();
+            initWowAnimation();
+            initMiscellaneous();
+
+            /* ---------------------------------------------
              Initializing Functions Triggered On Window Load
              --------------------------------------------- */
-            window.onload = function(){
+            $(window).on('load', function(){
                 console.log('window loaded');
                 initPreloaderFade();
-            }
-
-            $(document).ready(function() {
-                console.log('document is ready');
             });
 
             /* ---------------------------------------------
@@ -44,23 +57,6 @@
                 //console.log('window scrolled');
                 initHeaderAnimation();
             });
-
-            /* ---------------------------------------------
-             Initializing All Functions
-             --------------------------------------------- */
-            initHeroHeight();
-            initParallax();
-            initSectionHighlight();
-            initImageBackground();
-            initAnimateScroll();
-            initNavMenu();
-            initMagnificPopup();
-            initPortfolio();
-            initMasonry();
-            initProgressBar();
-            initCarousel();
-            initWowAnimation();
-            initMiscellaneous();
         });
 
         /* ---------------------------------------------
