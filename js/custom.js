@@ -33,11 +33,8 @@
      --------------------------------------------- */
     $(document).ready(function(){
         initParallax();
-        initSectionHighlight();
-        initImageBackground();
         initAnimateScroll();
         initMagnificPopup();
-        initMasonry();
         initCarousel();
         initWowAnimation();
         initMiscellaneous();
@@ -49,31 +46,6 @@
      --------------------------------------------- */
     function initPreloaderFade(){
         $('.preloader').fadeOut();
-    }
-
-
-    /* ---------------------------------------------
-     Section Highlighting
-     --------------------------------------------- */
-    function initSectionHighlight(){
-        $('section').each(function(){
-            $(this).waypoint(function(direction){
-                if(direction === 'down'){
-                    var sec_id = $(this).attr('id');
-                    var current_section_link = '.' + sec_id + '-nav';
-                    $('.main-nav > ul > li > a').removeClass('active-nav');
-                    $(current_section_link).addClass('active-nav');
-                }
-            } , {offset: '130px'});
-            $(this).waypoint(function(direction){
-                if(direction === 'up'){
-                    var sec_id = $(this).attr('id');
-                    var current_section_link = '.' + sec_id + '-nav';
-                    $('.main-nav > ul > li > a').removeClass('active-nav');
-                    $(current_section_link).addClass('active-nav');
-                }
-            } , {offset: function(){return -$(this).height() + 130;}});
-        });
     }
 
 
@@ -95,23 +67,6 @@
             });
             $('.parallax-layer').parallax();
         }
-    }
-
-
-    /* ---------------------------------------------
-     Image Background
-     --------------------------------------------- */
-    function initImageBackground(){
-        $(".image-bg").each(function(){
-            if($(this).attr("data-image-bg")){
-                $(this).css({
-                    "background": "url(" + $(this).data("image-bg") + ")",
-                    'background-position': 'center top',
-                    'background-repeat': 'no-repeat',
-                    'background-size': 'cover'
-                });
-            }
-        });
     }
 
 
@@ -165,16 +120,6 @@
             gallery: {
                 enabled: true
             }
-        });
-    }
-
-
-    /* ---------------------------------------------
-     Masonry
-     --------------------------------------------- */
-    function initMasonry(){
-        $(".masonry").imagesLoaded(function(){
-            $(".masonry").masonry();
         });
     }
 

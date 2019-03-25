@@ -287,9 +287,19 @@
         // On mount event
         tag.on('mount', function() {
             $(document).ready(function(){
+                initMasonry();
                 initPortfolio();
             });
         });
+
+        /* ---------------------------------------------
+         Masonry
+         --------------------------------------------- */
+        function initMasonry(){
+            $(".masonry").imagesLoaded(function(){
+                $(".masonry").masonry();
+            });
+        }
 
         /* ---------------------------------------------
          Portfolio
