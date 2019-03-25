@@ -2,17 +2,30 @@
     'use-strict';
 
 
+    $(document).ready(function() {
+        console.log('document is ready');
+    });
+
 
     /* ---------------------------------------------
      Initializing Functions Triggered On Window Load
      --------------------------------------------- */
     $(window).on('load', function(){
-        console.log('loaded');
+        console.log('window loaded');
         initPreloaderFade();
-    });
-
-    $(document).ready(function() {
-        console.log('ready');
+        initHeroHeight();
+        initParallax();
+        initSectionHighlight();
+        initImageBackground();
+        initAnimateScroll();
+        initNavMenu();
+        initMagnificPopup();
+        initPortfolio();
+        initMasonry();
+        initProgressBar();
+        initCarousel();
+        initWowAnimation();
+        initMiscellaneous();
     });
 
 
@@ -31,24 +44,6 @@
     $(window).on('scroll', function(){
         initHeaderAnimation();
     });
-
-
-    /* ---------------------------------------------
-     Initializing All Functions When DOM Is Ready
-     --------------------------------------------- */
-    initHeroHeight();
-    initParallax();
-    initSectionHighlight();
-    initImageBackground();
-    initAnimateScroll();
-    initNavMenu();
-    initMagnificPopup();
-    initPortfolio();
-    initMasonry();
-    initProgressBar();
-    initCarousel();
-    initWowAnimation();
-    initMiscellaneous();
 
 
     /* ---------------------------------------------
