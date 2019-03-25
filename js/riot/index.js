@@ -111,7 +111,6 @@ riot.compile(function() {
     /* ---------------------------------------------
      Initialize Custom JS
      --------------------------------------------- */
-    console.log('initializing cutsom js');
     initAll();
 
 });

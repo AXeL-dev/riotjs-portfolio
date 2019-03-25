@@ -48,7 +48,7 @@
         }
 
         // Force scroll to location hash
-        console.log('location hash: ' + location.hash);
+        //console.log('location hash: ' + location.hash);
         if (location.hash.match('^#')) {
             $(location.hash).animatescroll();
         }
