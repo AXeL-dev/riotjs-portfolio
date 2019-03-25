@@ -21,8 +21,26 @@
             });
 
             /* ---------------------------------------------
-             Initializing All Functions When DOM Is Ready
+             Initializing Functions Triggered On Window Resize
              --------------------------------------------- */
+            $(window).on('resize', function(){
+                console.log('window resized');
+                initHeroHeight();
+                initPortfolioResize();
+            });
+
+            /* ---------------------------------------------
+             Initializing Functions Triggered On Window Scroll
+             --------------------------------------------- */
+            $(window).on('scroll', function(){
+                console.log('window scrolled');
+                initHeaderAnimation();
+            });
+
+            /* ---------------------------------------------
+             Initializing All Functions
+             --------------------------------------------- */
+            initPreloaderFade();
             initHeroHeight();
             initParallax();
             initSectionHighlight();
@@ -36,29 +54,6 @@
             initCarousel();
             initWowAnimation();
             initMiscellaneous();
-        });
-
-        /* ---------------------------------------------
-         Initializing Functions Triggered On Window Load
-         --------------------------------------------- */
-        $(window).on('load', function(){
-            console.log('window loaded');
-            initPreloaderFade();
-        });
-
-        /* ---------------------------------------------
-         Initializing Functions Triggered On Window Resize
-         --------------------------------------------- */
-        $(window).on('resize', function(){
-            initHeroHeight();
-            initPortfolioResize();
-        });
-
-        /* ---------------------------------------------
-         Initializing Functions Triggered On Window Scroll
-         --------------------------------------------- */
-        $(window).on('scroll', function(){
-            initHeaderAnimation();
         });
 
         /* ---------------------------------------------
