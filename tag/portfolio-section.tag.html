@@ -286,19 +286,24 @@
 
         // On mount event
         tag.on('mount', function() {
-            $(document).ready(function(){
-                initMasonry();
-                initPortfolio();
+            $(window).on('resize', function(){
+                initPortfolioResize();
             });
+            initPortfolio();
         });
 
         /* ---------------------------------------------
-         Masonry
+         Portfolio Resize
          --------------------------------------------- */
-        function initMasonry(){
-            $(".masonry").imagesLoaded(function(){
-                $(".masonry").masonry();
+        function initPortfolioResize(){
+            $('.portfolio-items').isotope({
+                filter  : $('.filter').find('a.active').attr('data-filter'),
+                animationOptions: {
+                    duration: 750,
+                    queue: false
+                }
             });
+            return false;
         }
 
         /* ---------------------------------------------

@@ -6,5 +6,25 @@
 
     <script>
         this.title = 'AXeL-dev';
+
+        this.on('mount', function() {
+            $(window).on('scroll', function(){
+                initHeaderAnimation();
+            });
+        });
+
+        /* ---------------------------------------------
+         Header Animation
+         --------------------------------------------- */
+        function initHeaderAnimation(){
+            var scroll_top = $(document).scrollTop();
+            if(scroll_top >= 100){
+                $('.header').removeClass('header-hidden');
+                $('.header').addClass('header-visible');
+            }else{
+                $('.header').removeClass('header-visible');
+                $('.header').addClass('header-hidden');
+            }
+        }
     </script>
 </header>
