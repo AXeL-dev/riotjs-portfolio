@@ -39,20 +39,22 @@
         initCarousel();
         initWowAnimation();
         initMiscellaneous();
+
         // The window load event does not always get fired on remote server
         // So we make sure that the preloader is not displayed when document is ready
-        /*if (document.readyState === 'complete') {
+        if (document.readyState === 'complete') {
             console.log('document is ready');
             initPreloaderFade();
         }
+
         // Force scroll to location hash
         if (location.hash.match('^#')) {
             location.hash = location.hash;
         }
-        // Initialize tooltips
-        $('a.tooltipped').tooltip();*/
-    }
 
+        // Initialize tooltips
+        $('a.tooltipped').tooltip();
+    }
 
     /* ---------------------------------------------
      Preloader Fadeout
