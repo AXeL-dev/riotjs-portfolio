@@ -36,15 +36,6 @@
             /* ---------------------------------------------
              Initializing All Functions
              --------------------------------------------- */
-            if (document.readyState === 'complete') {
-                initPreloaderFade();
-            }
-            else {
-                $(window).on('load', function(){
-                    console.log('window loaded');
-                    initPreloaderFade();
-                });
-            }
             initHeroHeight();
             initParallax();
             initSectionHighlight();
@@ -58,6 +49,22 @@
             initCarousel();
             initWowAnimation();
             initMiscellaneous();
+            // On remote server window load event seems not to be triggered
+            // so we use this check to fadeout preloader when document is ready
+            if (document.readyState === 'complete') {
+                console.log('document is ready');
+                initPreloaderFade();
+            }
+            else {
+                $(window).on('load', function(){
+                    console.log('window loaded');
+                    initPreloaderFade();
+                });
+            }
+            // Force scroll to location hash
+            if (location.hash.match('^#')) {
+                location.hash = location.hash;
+            }
 
             /* ---------------------------------------------
              Preloader Fadeout
