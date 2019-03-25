@@ -32,16 +32,12 @@
      Initializing All Functions When DOM Is Ready
      --------------------------------------------- */
     $(document).ready(function(){
-        initHeroHeight();
         initParallax();
         initSectionHighlight();
         initImageBackground();
         initAnimateScroll();
-        initNavMenu();
         initMagnificPopup();
-        initPortfolio();
         initMasonry();
-        initProgressBar();
         initCarousel();
         initWowAnimation();
         initMiscellaneous();
@@ -132,26 +128,6 @@
 
 
     /* ---------------------------------------------
-     Navigation Menu
-     --------------------------------------------- */
-    function initNavMenu(){
-        $('.menu-bar').on('click', function(){
-            if($('.main-nav').hasClass('hidden')){
-                $('.main-nav').removeClass('hidden');
-                $('.main-nav').addClass('active');
-            }
-        });
-
-        $('.menu-close').on('click', function(){
-            if($('.main-nav').hasClass('active')){
-                $('.main-nav').removeClass('active');
-                $('.main-nav').addClass('hidden');
-            }
-        });
-    }
-
-
-    /* ---------------------------------------------
      Header Animation
      --------------------------------------------- */
     function initHeaderAnimation(){
@@ -204,42 +180,6 @@
 
 
     /* ---------------------------------------------
-     Portfolio
-     --------------------------------------------- */
-    function initPortfolio(){
-        $('.portfolio-items').imagesLoaded(function(){
-            $('.portfolio-items').show();
-            $('.portfolio-items').isotope({
-                filter:'*',
-                layoutMode:'masonry',
-                animationOptions:{
-                    duration:750,
-                    easing:'linear'
-                }
-            });
-        });
-
-        $('.filter').find('a').on('click', function(){
-            $('.portfolio-items').isotope({
-                filter  : $(this).attr('data-filter'),
-                animationOptions: {
-                    duration: 750,
-                    queue: false
-                }
-            });
-            return false;
-        });
-
-        $('.filter a').on('click', function(){
-            if (!$(this).hasClass('active')){
-                $('.filter a').removeClass('active');
-                $(this).addClass('active');
-            }
-        });
-    }
-
-
-    /* ---------------------------------------------
      Portfolio Resize
      --------------------------------------------- */
     function initPortfolioResize(){
@@ -251,28 +191,6 @@
             }
         });
         return false;
-    }
-
-
-    /* ---------------------------------------------
-     Progress Bar Animation
-     --------------------------------------------- */
-    function initProgressBar(){
-        $('.progress-bar > span').each(function(){
-            var $this = $(this);
-            var width = $(this).data('percent');
-            $this.css({
-                'transition' : 'width 1.5s'
-            });
-
-            setTimeout(function() {
-                $this.filter(':visible').waypoint(function(direction) {
-                    if( direction === 'down' ) {
-                        $this.css('width', width + '%');
-                    }
-                } , { offset: '100%' } );
-            }, 500);
-        });
     }
 
 

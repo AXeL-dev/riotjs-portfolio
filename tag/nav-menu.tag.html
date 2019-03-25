@@ -15,5 +15,30 @@
             { name: 'Experience', selector: '#experience-section', link: 'index.html#experience-section' },
             { name: 'Portfolio', selector: '#portfolio-section', link: 'index.html#portfolio-section' }
         ];
+
+        this.on('mount', function() {
+            $(document).ready(function(){
+                initNavMenu();
+            });
+        });
+
+        /* ---------------------------------------------
+         Navigation Menu
+         --------------------------------------------- */
+        function initNavMenu(){
+            $('.menu-bar').on('click', function(){
+                if($('.main-nav').hasClass('hidden')){
+                    $('.main-nav').removeClass('hidden');
+                    $('.main-nav').addClass('active');
+                }
+            });
+
+            $('.menu-close').on('click', function(){
+                if($('.main-nav').hasClass('active')){
+                    $('.main-nav').removeClass('active');
+                    $('.main-nav').addClass('hidden');
+                }
+            });
+        }
     </script>
 </nav-menu>

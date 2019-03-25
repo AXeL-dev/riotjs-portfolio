@@ -126,7 +126,7 @@
             {
                 name: 'Dolibarr Modules',
                 image: 'img/projects/dolibarr.png',
-                link : decodeURIComponent('https://www.dolistore.com/en/search?orderby=position%26orderway=desc%26search_query=axel'), // "and" character seems to trigger an error on riot compiler
+                link : 'https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel',
                 category: [
                     'PHP',
                     'Javascript'
@@ -283,5 +283,47 @@
                 project.class += tag.categories[category] + ' ';
             });
         });
+
+        // On mount event
+        tag.on('mount', function() {
+            $(document).ready(function(){
+                initPortfolio();
+            });
+        });
+
+        /* ---------------------------------------------
+         Portfolio
+         --------------------------------------------- */
+        function initPortfolio(){
+            $('.portfolio-items').imagesLoaded(function(){
+                $('.portfolio-items').show();
+                $('.portfolio-items').isotope({
+                    filter:'*',
+                    layoutMode:'masonry',
+                    animationOptions:{
+                        duration:750,
+                        easing:'linear'
+                    }
+                });
+            });
+
+            $('.filter').find('a').on('click', function(){
+                $('.portfolio-items').isotope({
+                    filter  : $(this).attr('data-filter'),
+                    animationOptions: {
+                        duration: 750,
+                        queue: false
+                    }
+                });
+                return false;
+            });
+
+            $('.filter a').on('click', function(){
+                if (!$(this).hasClass('active')){
+                    $('.filter a').removeClass('active');
+                    $(this).addClass('active');
+                }
+            });
+        }
     </script>
 </portfolio-section>
