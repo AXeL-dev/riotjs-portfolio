@@ -65,6 +65,8 @@
             if (location.hash.match('^#')) {
                 location.hash = location.hash;
             }
+            // Initialize tooltips
+            $('a.tooltipped').tooltip();
 
             /* ---------------------------------------------
              Preloader Fadeout
@@ -124,7 +126,7 @@
             function initParallax(){
                 if(!device.tablet() && !device.mobile()){
                     $('.parallax-section').each(function(){
-                        $('.parallax-section').parallaxScroll("50%", 0.3);
+                        $('.parallax-section').parallaxScroll('50%', 0.3);
                     });
                     $('.parallax-layer').parallax();
                 }
@@ -134,10 +136,10 @@
              Image Background
              --------------------------------------------- */
             function initImageBackground(){
-                $(".image-bg").each(function(){
-                    if($(this).attr("data-image-bg")){
+                $('.image-bg').each(function(){
+                    if($(this).attr('data-image-bg')){
                         $(this).css({
-                            "background": "url(" + $(this).data("image-bg") + ")",
+                            'background': 'url(' + $(this).data('image-bg') + ')',
                             'background-position': 'center top',
                             'background-repeat': 'no-repeat',
                             'background-size': 'cover'
@@ -194,7 +196,7 @@
                     }
                 });
 
-                $(".video-mfp").magnificPopup({
+                $('.video-mfp').magnificPopup({
                     type: 'iframe',
                     gallery: {
                         enabled: true
@@ -206,8 +208,8 @@
              Masonry
              --------------------------------------------- */
             function initMasonry(){
-                $(".masonry").imagesLoaded(function(){
-                    $(".masonry").masonry();
+                $('.masonry').imagesLoaded(function(){
+                    $('.masonry').masonry();
                 });
             }
 
