@@ -57,11 +57,12 @@
             initCarousel();
             initWowAnimation();
             initMiscellaneous();
-            // Ensure that preloader is not displayed after loading background images
-            $('.image-bg').imagesLoaded(function() {
-                console.log('background images loaded');
+            // The window load event does not always get fired on remote server
+            // So we make sure that the preloader is not displayed when document is ready
+            if (document.readyState === 'complete') {
+                console.log('document is ready');
                 initPreloaderFade();
-            });
+            }
             // Force scroll to location hash
             if (location.hash.match('^#')) {
                 location.hash = location.hash;
