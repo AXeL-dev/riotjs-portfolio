@@ -1,6 +1,6 @@
 
 /* ---------------------------------------------
- Mount Riot Tags (To know: riots mouting is synchronous)
+ Mount Riot Tags (To know: riot mouting is synchronous)
  --------------------------------------------- */
 riot.mount('preloader, header, footer');
 
