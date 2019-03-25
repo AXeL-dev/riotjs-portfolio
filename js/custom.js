@@ -184,7 +184,6 @@
      --------------------------------------------- */
     function initMiscellaneous(){
         $('.single-blog-navigation').children('a').addClass('btn-custom waves-effect');
-        $('#wp-calendar').children('a').addClass('waves-effect waves-light');
         $('.pagination').children('.page-numbers').addClass('btn-circle waves-effect waves-light');
     }
 
