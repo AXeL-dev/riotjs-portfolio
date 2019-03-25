@@ -3,13 +3,13 @@
     <ul>
         <li each="{ item in items }">
             <a if="{ opts.use_links }" href="{ item.link }" class="animatescroll-link">{ item.name }</a>
-            <a if="{ !opts.use_links }" href="#0" class="animatescroll-link" onclick="$('{ item.selector }').animatescroll();">{ item.name }</a>
+            <a if="{ !opts.use_links }" href="#" class="animatescroll-link" onclick="$('{ item.selector }').animatescroll();">{ item.name }</a>
         </li>
     </ul>
 
     <script>
         this.items = [
-            { name: 'Home', selector: 'html', link: 'index.html#0' },
+            { name: 'Home', selector: 'html', link: 'index.html' },
             { name: 'Skill', selector: '#skill-section', link: 'index.html#skill-section' },
             { name: 'Education', selector: '#education-section', link: 'index.html#education-section' },
             { name: 'Experience', selector: '#experience-section', link: 'index.html#experience-section' },

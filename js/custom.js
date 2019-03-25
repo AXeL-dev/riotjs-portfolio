@@ -50,7 +50,7 @@
         // Force scroll to location hash
         console.log('location hash: ' + location.hash);
         if (location.hash.match('^#')) {
-            location.hash = location.hash;
+            $(location.hash).animatescroll();
         }
 
         // Initialize tooltips
