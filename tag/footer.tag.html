@@ -17,8 +17,34 @@
             console.log('footer tag mounted');
 
             /* ---------------------------------------------
+             Initializing Functions Triggered On Window Resize
+             --------------------------------------------- */
+            $(window).on('resize', function(){
+                //console.log('window resized');
+                initHeroHeight();
+                initPortfolioResize();
+            });
+
+            /* ---------------------------------------------
+             Initializing Functions Triggered On Window Scroll
+             --------------------------------------------- */
+            $(window).on('scroll', function(){
+                //console.log('window scrolled');
+                initHeaderAnimation();
+            });
+
+            /* ---------------------------------------------
              Initializing All Functions
              --------------------------------------------- */
+            if (document.readyState === 'complete') {
+                initPreloaderFade();
+            }
+            else {
+                $(window).on('load', function(){
+                    console.log('window loaded');
+                    initPreloaderFade();
+                });
+            }
             initHeroHeight();
             initParallax();
             initSectionHighlight();
@@ -32,6 +58,34 @@
             initCarousel();
             initWowAnimation();
             initMiscellaneous();
+
+            /* ---------------------------------------------
+             Preloader Fadeout
+             --------------------------------------------- */
+            function initPreloaderFade(){
+                $('.preloader').fadeOut();
+            }
+
+            /* ---------------------------------------------
+             Hero Height
+             --------------------------------------------- */
+            function initHeroHeight(){
+                $('.hero-height').height($(window).height());
+            }
+
+            /* ---------------------------------------------
+             Header Animation
+             --------------------------------------------- */
+            function initHeaderAnimation(){
+                var scroll_top = $(document).scrollTop();
+                if(scroll_top >= 100){
+                    $('.header').removeClass('header-hidden');
+                    $('.header').addClass('header-visible');
+                }else{
+                    $('.header').removeClass('header-visible');
+                    $('.header').addClass('header-hidden');
+                }
+            }
 
             /* ---------------------------------------------
              Section Highlighting
@@ -55,13 +109,6 @@
                         }
                     } , {offset: function(){return -$(this).height() + 130;}});
                 });
-            }
-
-            /* ---------------------------------------------
-             Hero Height
-             --------------------------------------------- */
-            function initHeroHeight(){
-                $('.hero-height').height($(window).height());
             }
 
             /* ---------------------------------------------
@@ -190,6 +237,20 @@
                         $(this).addClass('active');
                     }
                 });
+            }
+
+            /* ---------------------------------------------
+             Portfolio Resize
+             --------------------------------------------- */
+            function initPortfolioResize(){
+                $('.portfolio-items').isotope({
+                    filter  : $('.filter').find('a.active').attr('data-filter'),
+                    animationOptions: {
+                        duration: 750,
+                        queue: false
+                    }
+                });
+                return false;
             }
 
             /* ---------------------------------------------
