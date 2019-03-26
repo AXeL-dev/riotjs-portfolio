@@ -36,6 +36,16 @@
             <div if="{ opts.max }" class="col s12 blog-all al-center">
                 <a href="blog.html" class="btn-custom waves-effect">All Blog Posts</a>
             </div>
+            <div if="{ opts.page }" class="col s12">
+                <div class="col s12 pagination mgt-60">
+                    <a class="prev page-numbers btn-circle waves-effect waves-light" href="blog.html?page=1"><span class="fa fa-angle-double-left"></span></a>
+                    <virtual each="{ page_number in pages }">
+                        <span if="{ opts.page == page_number }" aria-current="page" class="page-numbers current btn-circle waves-effect waves-light">{ page_number }</span>
+                        <a if="{ opts.page != page_number }" class="page-numbers btn-circle waves-effect waves-light" href="blog.html?page={ page_number }">{ page_number }</a>
+                    </virtual>
+                    <a class="next page-numbers btn-circle waves-effect waves-light" href="blog.html?page={ pages.length }"><span class="fa fa-angle-double-right"></span></a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -57,6 +67,19 @@
             post.text += '...';
         });
 
-        // TODO: add pagination support (when opts.max is not provided)
+        // Set pages
+        if (opts.page) {
+            this.pages = [];
+            this.posts_per_page = opts.posts_per_page || 6;
+            var page = 1;
+            for (var num = 1; num <= this.posts.length; num += this.posts_per_page) {
+                this.pages.push(page++);
+            }
+            // Splice posts to show on the current page
+            var start = (opts.page - 1) * this.posts_per_page;
+            var end = start + this.posts_per_page;
+            this.posts.splice(0, start);
+            this.posts.splice(end, this.posts.length - end);
+        }
     </script>
 </blog-section>

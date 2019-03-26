@@ -17,11 +17,7 @@ riot.compile(function() {
     /* ---------------------------------------------
      Get Post ID
      --------------------------------------------- */
-    var query_params = {};
-    location.search.substr(1).split('&').forEach(function(item) {
-        query_params[item.split('=')[0]] = item.split('=')[1];
-    });
-    var post_id = query_params.id || 1;
+    var post_id = getQueryParameters().id || 1;
 
 
     /* ---------------------------------------------

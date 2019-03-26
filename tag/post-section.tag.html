@@ -9,8 +9,8 @@
                     <div class="col s12 pd-50 pd-md-40 pd-sm-30">
                         <div class="single-blog-title">{ post.title }</div>
                         <div class="blog-data">
-                            <a href="#" class="waves-effect"><span class="fa fa-user"></span>{ post.author }</a>
-                            <a href="#" class="waves-effect"><span class="fa fa-calendar"></span>{ post.date }</a>
+                            <a href="javascript:void(0);" class="waves-effect"><span class="fa fa-user"></span>{ post.author }</a>
+                            <a href="javascript:void(0);" class="waves-effect"><span class="fa fa-calendar"></span>{ post.date }</a>
                         </div>
                         <div data-is="raw" content="{ post.text }" class="single-blog-content"></div>
 
@@ -18,14 +18,14 @@
                             <div if="{ post.categories }" class="single-blog-category">
                                 <span class="single-blog-taxonomy-item fa fa-folder"></span>
                                 <div>
-                                    <a each="{ category in post.categories }" href="#">{ category }</a>
+                                    <a each="{ category in post.categories }" href="javascript:void(0);">{ category }</a>
                                 </div>                      
                             </div>
 
                             <div if="{ post.tags }" class="single-blog-tags mgt-15">
                                 <span class="single-blog-taxonomy-item fa fa-tags"></span>
                                 <div>
-                                    <a each="{ tag in post.tags }" href="#">{ tag }</a>
+                                    <a each="{ tag in post.tags }" href="javascript:void(0);">{ tag }</a>
                                 </div>                  
                             </div>
                         </div>

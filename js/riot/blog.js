@@ -24,7 +24,8 @@ riot.compile(function() {
      Mount Blog Section Tag
      --------------------------------------------- */
     riot.mount('main-section', 'blog-section', {
-        posts: blog_posts
+        posts: blog_posts,
+        page: getQueryParameters().page || 1
     });
 
 
