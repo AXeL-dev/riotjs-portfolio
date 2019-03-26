@@ -79,7 +79,7 @@ var blog_posts = [
         </p>
         <br>
         <p>
-            As a conclusion, i can say as a developer that a full-rewrite using the new web technologies is maybe required to get a clean & easy to understand base code. Also, providing a good documentation is fundamental, especially for newcomers.
+            As a conclusion, i can say as a developer that a full-rewrite of dolibarr using the new web technologies is maybe required to get a clean & easy to understand base code. Also, providing a good documentation is fundamental, especially for newcomers.
         </p>`,
         categories: [
             'ERP',
@@ -156,7 +156,7 @@ var blog_posts = [
         </p>
         <br>
         <p>
-            If you don't have an email you can simply use <a href="https://temp-mail.org/" target="_blank">temp-mail.org</a>. You can also use <a href="https://www.fakenamegenerator.com/" target="_blank">fakenamegenerator.com</a> to get some fake personal informations (on your own risk). Happy Learning.
+            If you don't have an email you can simply use <a href="https://temp-mail.org/" target="_blank">temp-mail.org</a>. You can also use <a href="https://www.fakenamegenerator.com/" target="_blank">fakenamegenerator.com</a> to get some fake personal informations (at your own risk). Happy Learning.
         </p>`,
         tags: [
             'e-learning'
