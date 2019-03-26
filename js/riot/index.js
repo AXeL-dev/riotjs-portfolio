@@ -109,6 +109,16 @@ riot.compile(function() {
 
 
     /* ---------------------------------------------
+     Mount Blog Section Tag
+     --------------------------------------------- */
+    riot.mount('blog-section', {
+        title: 'Blog',
+        posts: blog_posts,
+        max: 4
+    });
+
+
+    /* ---------------------------------------------
      Initialize Custom JS
      --------------------------------------------- */
     initAll();
