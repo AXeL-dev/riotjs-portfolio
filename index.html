@@ -26,7 +26,23 @@
     <body>
 
         <!-- Preloader -->
-        <div data-is="preloader" class="preloader"></div>
+        <div class="preloader">
+            <div class="preloader-inner">
+                <div class="preloader-wrapper active">
+                    <div class="spinner-layer">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="gap-patch">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--/ Preloader -->
 
 
@@ -102,7 +118,6 @@
         <script src="js/wow.js"></script>
         <script src="js/custom.js"></script>
         <!-- include riot.js & required tags -->
-        <script type="riot/tag" src="tag/preloader.tag.html"></script>
         <script type="riot/tag" src="tag/header.tag.html"></script>
         <script type="riot/tag" src="tag/nav-menu.tag.html"></script>
         <script type="riot/tag" src="tag/top-section.tag.html"></script>

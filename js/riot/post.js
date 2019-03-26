@@ -5,7 +5,7 @@ riot.compile(function() {
     /* ---------------------------------------------
      Mount Riot Tags
      --------------------------------------------- */
-    riot.mount('preloader, header, top-section, footer');
+    riot.mount('header, top-section, footer');
 
 
     /* ---------------------------------------------
