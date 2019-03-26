@@ -94,13 +94,13 @@
 
         // Disqus script
         var disqus_config = function() {
-            this.page.url = 'https://axel-dev.github.io/portfolio';
+            this.page.url = opts.disqus.page_url;
             this.page.identifier = '/post.html?id=' + this.post.id;
         };
         (function() {
             var d = document,
             s = d.createElement('script');
-            s.src = 'https://axel-dev.disqus.com/embed.js';
+            s.src = 'https://' + opts.disqus.site_name + '.disqus.com/embed.js';
             s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
         })();
