@@ -15,16 +15,10 @@ riot.compile(function() {
 
 
     /* ---------------------------------------------
-     Get Post ID
-     --------------------------------------------- */
-    var post_id = getQueryParameters().id || 1;
-
-
-    /* ---------------------------------------------
      Mount Post Section Tag
      --------------------------------------------- */
     riot.mount('main-section', 'post-section', {
-        post: blog_posts.find(p => p.id == post_id),
+        post: blog_posts.find(p => p.id == getQueryParameters().id),
         disqus: {
             page_url: 'https://axel-dev.github.io/portfolio',
             site_name: 'axel-dev'

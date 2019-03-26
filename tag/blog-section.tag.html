@@ -75,6 +75,10 @@
             for (var num = 1; num <= this.posts.length; num += this.posts_per_page) {
                 this.pages.push(page++);
             }
+            // Redirect to 404 error page if requested page does not exist
+            if (this.pages.indexOf(parseInt(opts.page)) < 0) {
+                window.location.href = '404.html';
+            }
             // Splice posts to show on the current page
             var start = (opts.page - 1) * this.posts_per_page;
             var end = start + this.posts_per_page;

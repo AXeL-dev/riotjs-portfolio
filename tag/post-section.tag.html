@@ -61,7 +61,13 @@
     </style>
 
     <script>
-        this.post = opts.post || blog_posts[0];
+        if (opts.post) {
+            this.post = opts.post;
+        }
+        else {
+            // Redirect to 404 error page if requested post does not exist
+            window.location.href = '404.html';
+        }
 
         // Disqus script
         var disqus_config = function() {
