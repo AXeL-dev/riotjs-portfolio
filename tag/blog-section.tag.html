@@ -60,7 +60,7 @@
         // Generate posts links + clean and cut long posts text
         this.posts.forEach(function(post) {
             post.link = 'post.html?id=' + post.id;
-            post.text = $('<p>' + post.text + '</p>').text().trim(); // remove all html tags and outer spaces
+            post.text = $('<p>' + post.text + '</p>').text().trim().replace(/\s\s+/g, ' '); // remove all html tags and outer/double spaces
             if (post.text.length > 200) {
                 post.text = post.text.substr(0, 200);
             }
