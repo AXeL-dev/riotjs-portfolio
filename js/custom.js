@@ -54,7 +54,7 @@
         }
 
         // Initialize tooltips
-        $('a.tooltipped').tooltip();
+        $('.tooltipped').tooltip();
     }
 
 

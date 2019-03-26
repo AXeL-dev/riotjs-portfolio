@@ -156,7 +156,7 @@ var blog_posts = [
         </p>
         <br>
         <p>
-            If you don't have an email you can simply use <a href="https://temp-mail.org/" target="_blank">temp-mail.org</a>. You can also use <a href="https://www.fakenamegenerator.com/" target="_blank">fakenamegenerator.com</a> for personal informations. Happy Learning.
+            If you don't have an email you can simply use <a href="https://temp-mail.org/" target="_blank">temp-mail.org</a>. You can also use <a href="https://www.fakenamegenerator.com/" target="_blank">fakenamegenerator.com</a> to get some fake personal informations (on your own risk). Happy Learning.
         </p>`,
         tags: [
             'e-learning'

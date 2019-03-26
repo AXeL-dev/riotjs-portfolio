@@ -9,6 +9,30 @@ riot.compile(function() {
 
 
     /* ---------------------------------------------
+     Mount Technology Section Using Client Section Tag
+     --------------------------------------------- */
+    riot.mount('technology-section', 'client-section', {
+        title: 'Technology',
+        clients: [
+            { name: 'HTML', image: 'img/tech/html.png' },
+            { name: 'CSS', image: 'img/tech/css.png' },
+            { name: 'Bootstrap', image: 'img/tech/bootstrap.png' },
+            { name: 'Semantic UI', image: 'img/tech/semantic-ui.png' },
+            { name: 'Javascript', image: 'img/tech/js.png' },
+            { name: 'PHP', image: 'img/tech/php.png' },
+            { name: 'MySQL', image: 'img/tech/mysql.png' },
+            { name: 'Symfony', image: 'img/tech/symfony.png' },
+            { name: 'CodeIgniter', image: 'img/tech/codeigniter.png' },
+            { name: 'Drupal', image: 'img/tech/drupal.png' },
+            { name: 'jQuery', image: 'img/tech/jquery.png' },
+            { name: 'Ajax', image: 'img/tech/ajax.png' },
+            { name: 'Angular', image: 'img/tech/angular.png' },
+            { name: 'Riot JS', image: 'img/tech/riot.png' }
+        ]
+    });
+
+
+    /* ---------------------------------------------
      Mount Education Section Using Timeline Section Tag
      --------------------------------------------- */
     riot.mount('education-section', 'timeline-section', {
