@@ -177,9 +177,9 @@ var blog_posts = [
             What makes Riot so interesting?
         </p>
         <ul class="disc-list mgt-10">
-            <li class="bold-text">Easy to learn/use</li>
-            <li class="bold-text">Simple & minimalistic</li>
-            <li class="bold-text">Small, but complete</li>
+            <li class="bold-text">Simple to learn/use</li>
+            <li class="bold-text">High performance</li>
+            <li class="bold-text">Tiny size</li>
             <li class="bold-text">Stable & production ready</li>
         </ul>
         <p class="mgt-10">
