@@ -1,7 +1,7 @@
 
 var blog_posts = [
     {
-        id: 7,
+        id: 8,
         title: 'PHP vs node.js',
         date: 'March 27, 2019',
         author: 'AXeL',
@@ -61,7 +61,7 @@ var blog_posts = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         title: 'Magento CMS: Presentation',
         date: 'March 27, 2019',
         author: 'AXeL',
@@ -127,7 +127,7 @@ var blog_posts = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         title: 'Is jQuery dying?',
         date: 'March 27, 2019',
         author: 'AXeL',
@@ -164,9 +164,52 @@ var blog_posts = [
         ]
     },
     {
+        id: 5,
+        title: 'CodeIgniter 4: What\'s to come',
+        date: 'March 26, 2019',
+        author: 'AXeL',
+        image: 'img/posts/codeigniter.png',
+        text: `
+        <p>
+            <a href="https://www.codeigniter.com/" target="_blank">CodeIgniter</a> is one of the most popular PHP frameworks out there. Even though its activity & improvements have been too slow the last years, it stays simple, easy to learn, flexible & the most important it's blazing fast!
+        </p>
+        <p class="mgt-10">
+            Version 4 is a complete rewrite of the framework, so let's check what's new:
+        </p>
+        <ul class="disc-list mgt-10">
+            <li>
+                <p class="bold-text">The welcome page got a pretty new design<p>
+                <img src="img/posts/codeigniter4-welcome.png" alt="CodeIgniter4" />
+            </li>
+            <li>
+                <p class="bold-text">A debug bar has been introduced also</p>
+                <img src="img/posts/codeigniter4-debugbar.png" alt="CodeIgniter4" />
+            </li>
+            <li>
+                <p class="bold-text">The error parser has a new nice look & got some improvements</p>
+                <img src="img/posts/codeigniter4-errorparser.png" alt="CodeIgniter4" />
+            </li>
+            <li class="bold-text">Introduction of namespaces</li>
+            <li class="bold-text">PSR-4 autoloading</li>
+            <li class="bold-text">Requires PHP > 7.0</li>
+        </ul>
+        <p class="mgt-10">
+            <span class="bold-text">Note</span>: version 4 is currently in a beta stage, wich means that it's not yet ready for production, therefore the codeigniter team promised a long term support for version 3.
+        </p>
+        `,
+        categories: [
+            'Back End',
+            'Framework'
+        ],
+        tags: [
+            'PHP',
+            'CodeIgniter'
+        ]
+    },
+    {
         id: 4,
         title: 'Riot JS: Simple yet Powerful',
-        date: 'March 26, 2019',
+        date: 'March 25, 2019',
         author: 'AXeL',
         image: 'img/posts/riot-js.png',
         text: `
@@ -250,49 +293,6 @@ var blog_posts = [
     },
     {
         id: 2,
-        title: 'CodeIgniter 4: What\'s to come',
-        date: 'March 25, 2019',
-        author: 'AXeL',
-        image: 'img/posts/codeigniter.png',
-        text: `
-        <p>
-            <a href="https://www.codeigniter.com/" target="_blank">CodeIgniter</a> is one of the most popular PHP frameworks out there. Even though its activity & improvements have been too slow the last years, it stays simple, easy to learn, flexible & the most important it's blazing fast!
-        </p>
-        <p class="mgt-10">
-            Version 4 is a complete rewrite of the framework, so let's check what's new:
-        </p>
-        <ul class="disc-list mgt-10">
-            <li>
-                <p class="bold-text">The welcome page got a pretty new design<p>
-                <img src="img/posts/codeigniter4-welcome.png" alt="CodeIgniter4" />
-            </li>
-            <li>
-                <p class="bold-text">A debug bar has been introduced also</p>
-                <img src="img/posts/codeigniter4-debugbar.png" alt="CodeIgniter4" />
-            </li>
-            <li>
-                <p class="bold-text">The error parser has a new nice look & got some improvements</p>
-                <img src="img/posts/codeigniter4-errorparser.png" alt="CodeIgniter4" />
-            </li>
-            <li class="bold-text">Introduction of namespaces</li>
-            <li class="bold-text">PSR-4 autoloading</li>
-            <li class="bold-text">Requires PHP > 7.0</li>
-        </ul>
-        <p class="mgt-10">
-            <span class="bold-text">Note</span>: version 4 is currently in a beta stage, wich means that it's not yet ready for production, therefore the codeigniter team promised a long term support for version 3.
-        </p>
-        `,
-        categories: [
-            'Back End',
-            'Framework'
-        ],
-        tags: [
-            'PHP',
-            'CodeIgniter'
-        ]
-    },
-    {
-        id: 1,
         title: 'Get a free account on lynda.com',
         date: 'March 25, 2019',
         author: 'AXeL',
@@ -318,6 +318,30 @@ var blog_posts = [
         `,
         tags: [
             'e-learning'
+        ]
+    },
+    {
+        id: 1,
+        title: 'GitHub: Free unlimited private repos',
+        date: 'January 7, 2019',
+        author: 'AXeL',
+        image: 'img/posts/github.png',
+        text: `
+        <p>
+            GitHub is by far the most popular way to build and share software. That said, one weakness of the platform is that it limits who can create private repositories – that is, software projects that aren’t visible to the broader public, and are shared only with a handful of pre-defined collaborators – to paying users.
+        </p>
+        <p class="mgt-10">
+            Fortunately, that’s no longer the case, as GitHub today announced it was <a href="https://blog.github.com/2019-01-07-new-year-new-github/" target="_blank">giving users of its free plan access to unlimited private repositories</a>. This is great news for GitHub’s users, but there is a caveat, of course.
+        </p>
+        <p class="mgt-10">
+            Private repositories on free accounts are limited to three collaborators apiece. So, while this might work for a small project (like, for example, a team competing in a hackathon), it isn’t particularly well-suited for actual commercial usage.
+        </p>
+        <p class="mgt-10">
+            <a href="https://thenextweb.com/dd/2019/01/05/github-now-gives-free-users-unlimited-private-repositories/" target="_blank">Source</a>
+        </p>
+        `,
+        tags: [
+            'Github'
         ]
     }
 ];
