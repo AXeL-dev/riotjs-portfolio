@@ -19,6 +19,7 @@ riot.compile(function() {
             { name: 'Bootstrap', image: 'img/tech/bootstrap.png' },
             { name: 'Semantic UI', image: 'img/tech/semantic-ui.png' },
             { name: 'Javascript', image: 'img/tech/js.png' },
+            { name: 'Sass', image: 'img/tech/sass.png' },
             { name: 'PHP', image: 'img/tech/php.png' },
             { name: 'MySQL', image: 'img/tech/mysql.png' },
             { name: 'Symfony', image: 'img/tech/symfony.png' },
