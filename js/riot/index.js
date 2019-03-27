@@ -28,7 +28,8 @@ riot.compile(function() {
             { name: 'jQuery', image: 'img/tech/jquery.png' },
             { name: 'Ajax', image: 'img/tech/ajax.png' },
             { name: 'Angular', image: 'img/tech/angular.png' },
-            { name: 'Riot JS', image: 'img/tech/riot.png' }
+            { name: 'Riot JS', image: 'img/tech/riot.png' },
+            { name: '.Net', image: 'img/tech/dotnet.png' }
         ]
     });
 
