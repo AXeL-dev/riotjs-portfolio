@@ -96,7 +96,7 @@ var blog_posts = [
         image: 'img/posts/riot-js.png',
         text: `
         <p>
-            <a href="https://riot.js.org/" target="_blank">Riot</a> is a frontend javascript library that lets you build user interfaces with custom tags using simple and enjoyable syntax. It uses a virtual DOM similar to React but faster. <span class="bold-text">Riot</span> is very tiny compared to its competitors.
+            <a href="https://riot.js.org/" target="_blank">Riot</a> is a frontend javascript library that lets you build user interfaces with custom tags using simple and enjoyable syntax. It uses a virtual DOM similar to React but faster. <span class="bold-text">Riot</span> is very tiny compared to <a href="https://reactjs.org/" target="_blank">React</a> or <a href="https://www.polymer-project.org/" target="_blank">Polymer</a>.
         </p>
         <p class="mgt-10">
             <p>What makes Riot so interesting?</p>
@@ -104,11 +104,11 @@ var blog_posts = [
                 <li class="bold-text">Easy to learn/use</li>
                 <li class="bold-text">Simple & minimalistic</li>
                 <li class="bold-text">Small, but complete</li>
-                <li class="bold-text">Stable & ready for production</li>
+                <li class="bold-text">Stable & production ready</li>
             </ul>
         </p>
         <p class="mgt-10">
-            As a developer one of the main problems i face with new technologies is the learning curve, what i mean is that after spending time on learning something new there is no guarantee that you will find some projects to work on with what you just learned, so you may be just wasting time on learning something you won't use.
+            As a developer one of the main problems i face with new technologies is the significant learning curve with no guarantee that you will find some projects to work on with what you just learned, so you may be just wasting time on learning something you won't use.
             This is why i'm trying to be more consistent when it comes to choices & this is why i chose Riot ;)
         </p>
         <p class="mgt-10">
@@ -161,7 +161,7 @@ var blog_posts = [
             </ul>
         </p>
         <p class="mgt-10">
-            As a conclusion, i can say that a full-rewrite of dolibarr using some new web technologies is maybe required to get a clean & easy to understand base code. Also, providing a good documentation is fundamental, especially for beginners.
+            As a conclusion, i can say that a full-rewrite of dolibarr using some new web technologies is maybe needed to get a clean & easy to understand base code. Also, providing a good documentation is fundamental, especially for beginners.
         </p>
         `,
         categories: [
