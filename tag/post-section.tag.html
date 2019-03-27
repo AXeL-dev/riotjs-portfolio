@@ -60,11 +60,10 @@
     </style>
 
     <script>
-        if (opts.post) {
-            this.post = opts.post;
-        }
-        else {
-            // Redirect to 404 error page if requested post does not exist
+        this.post = opts.post || {};
+
+        // Redirect to 404 error page when post is empty
+        if (Object.keys(this.post).length === 0) {
             window.location.href = '404.html';
         }
 
