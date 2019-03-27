@@ -1,0 +1,7 @@
+<post-content>
+    <script>
+        // this tag is used to display post content as plain HTML
+        // because riot doesn't allow displaying html using expressions like { my_html } to avoid XSS injections
+        this.root.innerHTML = this.parent.post.text;
+    </script>
+</post-content>
