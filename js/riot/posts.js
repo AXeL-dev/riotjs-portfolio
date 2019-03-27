@@ -3,7 +3,7 @@ var blog_posts = [
     {
         id: 4,
         title: 'Riot JS: Simple yet Powerful',
-        date: 'Mars 26, 2019',
+        date: 'March 26, 2019',
         author: 'AXeL',
         image: 'img/posts/riot-js.png',
         text: `
@@ -43,7 +43,7 @@ var blog_posts = [
     {
         id: 3,
         title: 'Dolibarr.. My opinion',
-        date: 'Mars 25, 2019',
+        date: 'March 25, 2019',
         author: 'AXeL',
         image: 'img/posts/dolibarr.png',
         text: `
@@ -88,7 +88,7 @@ var blog_posts = [
     {
         id: 2,
         title: 'CodeIgniter 4: What\'s to come',
-        date: 'Mars 25, 2019',
+        date: 'March 25, 2019',
         author: 'AXeL',
         image: 'img/posts/codeigniter.png',
         text: `
@@ -116,7 +116,7 @@ var blog_posts = [
             </ul>
         </p>
         <p class="mgt-10">
-            <span class="bold-text">Note</span>: version 4 is currently in a beta stage, wich means that it's not yet ready for production. However the codeigniter team promised a long time support for version 3.
+            <span class="bold-text">Note</span>: version 4 is currently in a beta stage, wich means that it's not yet ready for production, therefore the codeigniter team promised a long time support for version 3.
         </p>
         `,
         categories: [
@@ -131,7 +131,7 @@ var blog_posts = [
     {
         id: 1,
         title: 'Get a free account on lynda.com',
-        date: 'Mars 25, 2019',
+        date: 'March 25, 2019',
         author: 'AXeL',
         image: 'img/posts/lynda.com.jpg',
         text: `
