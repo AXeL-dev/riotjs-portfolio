@@ -204,7 +204,7 @@ var blog_posts = [
             </ul>
         </p>
         <p class="mgt-10">
-            <span class="bold-text">Note</span>: version 4 is currently in a beta stage, wich means that it's not yet ready for production, therefore the codeigniter team promised a long time support for version 3.
+            <span class="bold-text">Note</span>: version 4 is currently in a beta stage, wich means that it's not yet ready for production, therefore the codeigniter team promised a long term support for version 3.
         </p>
         `,
         categories: [
