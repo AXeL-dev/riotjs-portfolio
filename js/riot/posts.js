@@ -165,7 +165,7 @@ var blog_posts = [
     },
     {
         id: 5,
-        title: 'CodeIgniter 4: What\'s to come',
+        title: 'CodeIgniter 4: What\'s new',
         date: 'March 26, 2019',
         author: 'AXeL',
         image: 'img/posts/codeigniter.png',
@@ -174,7 +174,7 @@ var blog_posts = [
             <a href="https://www.codeigniter.com/" target="_blank">CodeIgniter</a> is one of the most popular PHP frameworks out there. Even though its activity & improvements have been too slow the last years, it stays simple, easy to learn, flexible & the most important it's blazing fast!
         </p>
         <p class="mgt-10">
-            Version 4 is a complete rewrite of the framework, so let's check what's new:
+            Version 4 is a complete rewrite of the framework & these are the main changes that comes with it:
         </p>
         <ul class="disc-list mgt-10">
             <li>
