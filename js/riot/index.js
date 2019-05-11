@@ -78,24 +78,7 @@ riot.compile(function() {
                 description: [
                     'Start contributing to open-source community as such as creating well designed applications and websites.'
                 ],
-                time: '2017 - 2018'
-            },
-            {
-                tag: 'NAMYR Communication',
-                title: 'Full Stack Developer',
-                description: [
-                    'Creation of an e-commerce website using the CodeIgniter PHP framework.'
-                ],
-                time: 'September 2017 - December 2017',
-                position: 'right'
-            },
-            {
-                tag: 'HP CDG IT Services Morocco',
-                title: 'Customer advisor',
-                description: [
-                    'Customer Advisor for booking at Accor Hotels.'
-                ],
-                time: 'February 2017 - April 2017'
+                time: '2017 - 2019'
             },
             {
                 tag: 'Kenitra Negoce Technology',
