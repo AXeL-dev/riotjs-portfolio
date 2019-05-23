@@ -26,7 +26,7 @@ var blog_posts = [
             <li><b>No protocols, no headaches, no wars..</b></li>
         </ul>
         <p class="mgt-10">
-            Cool! what about the cons? yup, there is always some:
+            Cool! what about the cons? yup, there are always some:
         </p>
         <ul class="disc-list mgt-10">
             <li><b>No guarantee</b> (it's not easy to find some tasks or projects to work on, unless you have some experience)</li>
