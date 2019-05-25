@@ -24,6 +24,7 @@ riot.compile(function() {
             { name: 'MySQL', image: 'img/tech/mysql.png' },
             { name: 'Symfony', image: 'img/tech/symfony.png' },
             { name: 'CodeIgniter', image: 'img/tech/codeigniter.png' },
+            { name: 'Wordpress', image: 'img/tech/wordpress.png' },
             { name: 'Drupal', image: 'img/tech/drupal.png' },
             { name: 'jQuery', image: 'img/tech/jquery.png' },
             { name: 'Ajax', image: 'img/tech/ajax.png' },
