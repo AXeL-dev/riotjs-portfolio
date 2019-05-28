@@ -74,6 +74,17 @@ riot.compile(function() {
         title: 'Experience',
         items: [
             {
+                tag: 'Blue Mango Software',
+                title: 'Analyst/Programmer',
+                description: [
+                    '✔ Customizing some open-source projects such as: <b>Dolibarr</b>, <b>osTicket</b>, <b>Alfresco</b>, <b>VICIdial</b>.',
+                    '✔ Creating websites/dashboards using technologies like Wordpress, PHP & Javascript.',
+                    '✔ Doing server administration & backup stuff.'
+                ],
+                time: 'April 2019 - present',
+                position: 'right'
+            },
+            {
                 tag: 'Freelance',
                 title: 'Freelancer',
                 description: [
@@ -85,8 +96,8 @@ riot.compile(function() {
                 tag: 'Kenitra Negoce Technology',
                 title: 'Software Developer',
                 description: [
-                    'Bug fixes and modules development on SaturnERP (a copy of Dolibarr ERP).',
-                    'Redesigning the graphical interface of the cloning tool CLONEWise (based on FOG Project).'
+                    '✔ Bug fixes and modules development on SaturnERP (a copy of Dolibarr ERP).',
+                    '✔ Redesigning the graphical interface of the cloning tool CLONEWise (based on FOG Project).'
                 ],
                 time: 'February 2016 - June 2016',
                 position: 'right'
