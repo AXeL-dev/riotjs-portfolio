@@ -14,7 +14,7 @@ var blog_posts = [
             <img src="img/posts/gitflow.png" alt="Gitflow" />
         </p>
         <p class="mgt-10">
-            Next is to install the git-flow package & start using it in your projects. You'll find more details in the links below:
+            To install the git-flow package & start using it in your projects, simply follow the instructions in the links below:
         </p>
         <ul class="disc-list mgt-10">
             <li><a href="https://github.com/petervanderdoes/gitflow-avh/wiki/Installation">Installation instructions</a></li>
