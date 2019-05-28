@@ -17,7 +17,9 @@
                                 <div class="timeline-tag">{ item.tag }</div>
                                 <div class="timeline-title timeline-title-alt">{ item.title }</div>
                                 <div class="timeline-desc" if="{ item.description }">
-                                    <p each="{ text in item.description }">{ text }</p>
+                                    <p each="{ text in item.description }">
+                                        <html-content html="{ text }"></html-content>
+                                    </p>
                                 </div>
                                 <div class="timeline-time">{ item.time }</div>
                             </div>
@@ -31,3 +33,10 @@
         </div>
     </div>
 </timeline-section>
+
+<html-content>
+    <script>
+        // this tag is used to display HTML content
+        this.root.innerHTML = this.opts.html;
+    </script>
+</html-content>
