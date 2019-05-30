@@ -77,8 +77,8 @@ riot.compile(function() {
                 tag: 'Blue Mango Software',
                 title: 'Analyst/Programmer',
                 description: [
-                    '✔ Customizing some open-source projects such as: <b>Dolibarr</b>, <b>osTicket</b>, <b>Alfresco</b>, <b>VICIdial</b>.',
-                    '✔ Creating websites/dashboards using technologies like Wordpress, PHP & Javascript.',
+                    '✔ Customizing open-source projects such as: Dolibarr, osTicket, Alfresco, VICIdial.',
+                    '✔ Creating websites/dashboards using technologies like Wordpress, PHP, Javascript ...',
                     '✔ Doing server administration & backup stuff.'
                 ],
                 time: 'April 2019 - present',
@@ -88,7 +88,9 @@ riot.compile(function() {
                 tag: 'Freelance',
                 title: 'Freelancer',
                 description: [
-                    'Start contributing to open-source community as such as creating well designed applications and websites.'
+                    '✔ Developing custom <a href="https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel" target="_blank">modules</a> for Dolibarr.',
+                    '✔ Publishing some of my own projects like <a href="https://github.com/AXeL-dev/Dindo-Bot" target="_blank">Dindo Bot</a>, <a href="https://github.com/AXeL-dev/distract-me-not" target="_blank">Distract Me Not</a>, <a href="https://github.com/AXeL-dev/dolibase" target="_blank">Dolibase</a>, <a href="https://github.com/AXeL-dev/riot-presents" target="_blank">Riot Presents</a>.',
+                    '✔ Contributing to open-source community. <a href="https://github.com/Jessewb786/Silaty/graphs/contributors" target="_blank">#Silaty</a> <a href="https://github.com/Dolibarr/dolibarr/graphs/contributors" target="_blank">#Dolibarr</a>'
                 ],
                 time: '2017 - 2019'
             },
