@@ -76,7 +76,9 @@
      Preloader Fadeout
      --------------------------------------------- */
     function initPreloaderFade(){
-        $('.preloader').fadeOut();
+        $('.image-bg').imagesLoaded({ background: true }, function(){
+            $('.preloader').fadeOut();
+        });
     }
 
 
@@ -221,7 +223,7 @@
      Masonry
      --------------------------------------------- */
     function initMasonry(){
-        $('.masonry').imagesLoaded(function(){
+        $('.masonry').imagesLoaded({ background: true }, function(){
             $('.masonry').masonry();
         });
     }
@@ -231,7 +233,7 @@
      Portfolio
      --------------------------------------------- */
     function initPortfolio(){
-        $('.portfolio-items').imagesLoaded(function(){
+        $('.portfolio-items').imagesLoaded({ background: true }, function(){
             $('.portfolio-items').show();
             $('.portfolio-items').isotope({
                 filter:'*',

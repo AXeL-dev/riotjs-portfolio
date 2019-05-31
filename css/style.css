@@ -418,11 +418,6 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 }
 
 .shadow-bg{
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
 	-webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
 	-moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
 	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.10), 0px 1px 6px rgba(0, 0, 0, 0.20);
@@ -1633,37 +1628,6 @@ ol.ff-roboto-cn li, ul.ff-roboto-cn li{
 
 .portfolio-content figcaption:hover .portfolio-intro{
 	opacity: 1;
-}
-
-.isotope-item{
-    z-index: 2;
-	left: 0 !important;
-	top: 0 !important;
-}
-
-.isotope-hidden.isotope-item{
-    pointer-events: none;
-    z-index: 1;
-}
-
-.isotope, .isotope .isotope-item{
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -ms-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-}
-
-.isotope{
-    -webkit-transition-property: height, width;
-    -moz-transition-property: height, width;
-    transition-property: height, width;
-}
-
-.isotope .isotope-item{
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    transition-property: all;
 }
 
 .portfolio-all a{
