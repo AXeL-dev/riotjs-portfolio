@@ -22,6 +22,7 @@ riot.compile(function() {
             { name: 'Sass', image: 'img/tech/sass.png' },
             { name: 'PHP', image: 'img/tech/php.png' },
             { name: 'MySQL', image: 'img/tech/mysql.png' },
+            { name: 'mongoDB', image: 'img/tech/mongodb.png' },
             { name: 'Symfony', image: 'img/tech/symfony.png' },
             { name: 'CodeIgniter', image: 'img/tech/codeigniter.png' },
             { name: 'Wordpress', image: 'img/tech/wordpress.png' },
@@ -30,7 +31,9 @@ riot.compile(function() {
             { name: 'Ajax', image: 'img/tech/ajax.png' },
             { name: 'Angular', image: 'img/tech/angular.png' },
             { name: 'Riot JS', image: 'img/tech/riot.png' },
-            { name: '.Net', image: 'img/tech/dotnet.png' }
+            { name: '.Net', image: 'img/tech/dotnet.png' },
+            { name: 'Qt Framework', image: 'img/tech/qt.png' },
+            { name: 'GTK', image: 'img/tech/gtk.png' }
         ]
     });
 
