@@ -20,6 +20,7 @@ riot.compile(function() {
             { name: 'Semantic UI', image: 'img/tech/semantic-ui.png' },
             { name: 'Javascript', image: 'img/tech/js.png' },
             { name: 'Sass', image: 'img/tech/sass.png' },
+            { name: 'Jekyll', image: 'img/tech/jekyll.png' },
             { name: 'PHP', image: 'img/tech/php.png' },
             { name: 'MySQL', image: 'img/tech/mysql.png' },
             { name: 'mongoDB', image: 'img/tech/mongodb.png' },
@@ -32,8 +33,10 @@ riot.compile(function() {
             { name: 'Angular', image: 'img/tech/angular.png' },
             { name: 'Riot JS', image: 'img/tech/riot.png' },
             { name: '.Net', image: 'img/tech/dotnet.png' },
+            { name: 'SQL Server', image: 'img/tech/sql-server.png' },
             { name: 'Qt Framework', image: 'img/tech/qt.png' },
-            { name: 'GTK', image: 'img/tech/gtk.png' }
+            { name: 'GTK', image: 'img/tech/gtk.png' },
+            { name: 'Android', image: 'img/tech/android.png' }
         ]
     });
 
