@@ -309,7 +309,7 @@ var blog_posts = [
         <p class="mgt-10">
             Convinced & want to give it a try? here you go!
         </p>
-        <iframe class="mgt-10" src="https://riot.js.org/examples/live-editor/"></iframe>
+        <iframe class="mgt-10" src="https://riot.js.org/examples/wip/live-editor/"></iframe>
         <p class="mgt-10">
             I recently introduced Riot to my portfolio, you will find the full source code <a href="https://github.com/AXeL-dev/portfolio" target="_blank">here</a> (note that this is not the best example of what you could do with riot).
         </p>
