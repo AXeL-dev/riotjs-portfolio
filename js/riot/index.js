@@ -14,29 +14,32 @@ riot.compile(function() {
     riot.mount('technology-section', 'client-section', {
         title: 'Technology',
         clients: [
-            { name: 'HTML', image: 'img/tech/html.png' },
-            { name: 'CSS', image: 'img/tech/css.png' },
+            //{ name: 'HTML', image: 'img/tech/html.png' },
+            //{ name: 'CSS', image: 'img/tech/css.png' },
             { name: 'Bootstrap', image: 'img/tech/bootstrap.png' },
             { name: 'Semantic UI', image: 'img/tech/semantic-ui.png' },
-            { name: 'Javascript', image: 'img/tech/js.png' },
             { name: 'Sass', image: 'img/tech/sass.png' },
             { name: 'Jekyll', image: 'img/tech/jekyll.png' },
-            { name: 'PHP', image: 'img/tech/php.png' },
-            { name: 'MySQL', image: 'img/tech/mysql.png' },
-            { name: 'mongoDB', image: 'img/tech/mongodb.png' },
+            //{ name: 'PHP', image: 'img/tech/php.png' },
             { name: 'Symfony', image: 'img/tech/symfony.png' },
             { name: 'CodeIgniter', image: 'img/tech/codeigniter.png' },
             { name: 'Wordpress', image: 'img/tech/wordpress.png' },
             { name: 'Drupal', image: 'img/tech/drupal.png' },
+            { name: 'MySQL', image: 'img/tech/mysql.png' },
+            { name: 'mongoDB', image: 'img/tech/mongodb.png' },
+            //{ name: 'Javascript', image: 'img/tech/js.png' },
             { name: 'jQuery', image: 'img/tech/jquery.png' },
             { name: 'Ajax', image: 'img/tech/ajax.png' },
+            { name: 'TypeScript', image: 'img/tech/ts.png' },
             { name: 'Angular', image: 'img/tech/angular.png' },
             { name: 'Riot JS', image: 'img/tech/riot.png' },
             { name: '.Net', image: 'img/tech/dotnet.png' },
             { name: 'SQL Server', image: 'img/tech/sql-server.png' },
+            { name: 'Docker', image: 'img/tech/docker.png' },
             { name: 'Qt Framework', image: 'img/tech/qt.png' },
             { name: 'GTK', image: 'img/tech/gtk.png' },
-            { name: 'Android', image: 'img/tech/android.png' }
+            { name: 'Android', image: 'img/tech/android.png' },
+            { name: 'Electron', image: 'img/tech/electron.png' }
         ]
     });
 
