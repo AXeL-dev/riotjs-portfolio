@@ -81,9 +81,9 @@
             }
             // Splice posts to show on the current page
             var start = (opts.page - 1) * this.posts_per_page;
-            var end = start + this.posts_per_page;
             this.posts.splice(0, start);
-            this.posts.splice(end, this.posts.length - end);
+            var end = this.posts.length - this.posts_per_page;
+            this.posts.splice(this.posts_per_page, end);
         }
     </script>
 </blog-section>
