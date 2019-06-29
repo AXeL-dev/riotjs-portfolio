@@ -1,6 +1,34 @@
 
 var blog_posts = [
     {
+        id: 14,
+        title: 'Phoenix OS: use Android as a desktop OS',
+        date: 'June 29, 2019',
+        author: 'AXeL',
+        image: 'img/posts/phoenix-os.jpg',
+        text: `
+        <p>
+            <a href="https://www.phoenixos.com/" target="_blank">Phoenix OS</a> is a free, Android™ based project operating system that can be installed on tablets, laptops and desktop computers. It is an "enhanced" version of Android focused on bringing Windows features such as the well-known "Start Menu" and "Task Bar".
+        </p>
+        <p class="mgt-10">
+            <img src="img/posts/phoenix-os-desktop.jpg" alt="Phoenix OS" />
+        </p>
+        <p class="mgt-10">
+            Well, i have nothing more to say, if you want to try it simply follow the installation steps on the <a href="https://www.phoenixos.com/en/download_x86">official website</a>.
+        </p>
+        <p class="mgt-10">
+            <a href="https://www.fosshub.com/Phoenix-OS.html">Source</a>
+        </p>
+        `,
+        categories: [
+            'OS',
+            'Desktop'
+        ],
+        tags: [
+            'Phoenix OS'
+        ]
+    },
+    {
         id: 13,
         title: 'osTicket: An open source ticket manager',
         date: 'June 23, 2019',
