@@ -87,8 +87,10 @@ riot.compile(function() {
                 title: 'Analyst/Programmer',
                 description: [
                     '✔ Customizing open-source projects such as: Dolibarr, osTicket, Alfresco, VICIdial.',
-                    '✔ Creating websites/dashboards using technologies like Wordpress, PHP, Javascript ...',
-                    '✔ Doing server administration & backup stuff.'
+                    '✔ Creating websites, dashboards & plugins using technologies like Wordpress, AngularJS, PHP, Javascript ...',
+                    '✔ Documenting projects using <a href="https://docsify.js.org/" target="_blank">docsify</a>.',
+                    '✔ Setting up an OpenLDAP server to centralise third parties data.',
+                    '✔ Doing server administration & backup stuff (ssh, ftp, vnc).'
                 ],
                 time: 'April 2019 - present',
                 position: 'right'
@@ -99,16 +101,37 @@ riot.compile(function() {
                 description: [
                     '✔ Developing custom <a href="https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel" target="_blank">modules</a> for Dolibarr.',
                     '✔ Publishing some of my own projects like <a href="https://github.com/AXeL-dev/Dindo-Bot" target="_blank">Dindo Bot</a>, <a href="https://github.com/AXeL-dev/distract-me-not" target="_blank">Distract Me Not</a>, <a href="https://github.com/AXeL-dev/dolibase" target="_blank">Dolibase</a>, <a href="https://github.com/AXeL-dev/riot-presents" target="_blank">Riot Presents</a>.',
-                    '✔ Contributing to open-source community. <a href="https://github.com/Jessewb786/Silaty/graphs/contributors" target="_blank">#Silaty</a> <a href="https://github.com/Dolibarr/dolibarr/graphs/contributors" target="_blank">#Dolibarr</a>'
+                    '✔ Contributing to open-source community. <a href="https://github.com/Jessewb786/Silaty/graphs/contributors" target="_blank">#Silaty</a> <a href="https://github.com/Dolibarr/dolibarr/graphs/contributors" target="_blank">#Dolibarr</a>',
+                    '✔ Learning & discovering new technologies, design patterns, best code practices.'
                 ],
                 time: '2017 - 2019'
+            },
+            {
+                tag: 'NAMYR Communication',
+                title: 'Full Stack Developer',
+                description: [
+                    '✔ Creation of an e-commerce website using the CodeIgniter PHP framework.',
+                    '✔ Web scraping data for analysis purpose using <a href="http://casperjs.org/" target="_blank">CasperJS</a>.'
+                ],
+                time: 'September 2017 - December 2017',
+                position: 'right'
+            },
+            {
+                tag: 'HP CDG IT Services Morocco',
+                title: 'Customer advisor',
+                description: [
+                    'Customer Advisor for booking at Accor Hotels.'
+                ],
+                time: 'February 2017 - April 2017'
             },
             {
                 tag: 'Kenitra Negoce Technology',
                 title: 'Software Developer',
                 description: [
                     '✔ Bug fixes and modules development on SaturnERP (a copy of Dolibarr ERP).',
-                    '✔ Redesigning the graphical interface of the cloning tool CLONEWise (based on FOG Project).'
+                    '✔ Redesigning the graphical interface of the cloning tool CLONEWise (based on FOG Project).',
+                    '✔ Using tools like <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a> for tasks management & <a href="https://git-scm.com/" target="_blank">git</a> for source code commits.',
+                    '✔ Administering servers/virtual machines using ssh & VMware.'
                 ],
                 time: 'February 2016 - June 2016',
                 position: 'right'
