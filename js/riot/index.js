@@ -12,7 +12,7 @@ riot.compile(function() {
      Mount Technology Section Using Client Section Tag
      --------------------------------------------- */
     riot.mount('technology-section', 'client-section', {
-        title: 'Technology',
+        title: 'Tools & Technologies',
         clients: [
             //{ name: 'HTML', image: 'img/tech/html.png' },
             //{ name: 'CSS', image: 'img/tech/css.png' },
@@ -39,7 +39,10 @@ riot.compile(function() {
             { name: 'Qt Framework', image: 'img/tech/qt.png' },
             { name: 'GTK', image: 'img/tech/gtk.png' },
             { name: 'Android', image: 'img/tech/android.png' },
-            { name: 'Electron', image: 'img/tech/electron.png' }
+            { name: 'Electron', image: 'img/tech/electron.png' },
+            { name: 'Trello', image: 'img/tech/trello.png' },
+            { name: 'Git', image: 'img/tech/git.png' },
+            { name: 'NPM', image: 'img/tech/npm.png' }
         ]
     });
 
