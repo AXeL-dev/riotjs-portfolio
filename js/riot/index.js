@@ -92,8 +92,7 @@ riot.compile(function() {
                     '✔ Setting up an OpenLDAP server to centralise third parties data.',
                     '✔ Doing server administration & backup stuff (ssh, ftp, vnc).'
                 ],
-                time: 'April 2019 - present',
-                position: 'right'
+                time: 'April 2019 - present'
             },
             {
                 tag: 'Freelance',
@@ -104,7 +103,8 @@ riot.compile(function() {
                     '✔ Contributing to open-source community. <a href="https://github.com/Jessewb786/Silaty/graphs/contributors" target="_blank">#Silaty</a> <a href="https://github.com/Dolibarr/dolibarr/graphs/contributors" target="_blank">#Dolibarr</a>',
                     '✔ Learning & discovering new technologies, design patterns, best code practices.'
                 ],
-                time: '2017 - 2019'
+                time: '2017 - 2019',
+                position: 'right'
             },
             {
                 tag: 'NAMYR Communication',
@@ -113,16 +113,7 @@ riot.compile(function() {
                     '✔ Creation of an e-commerce website using the CodeIgniter PHP framework.',
                     '✔ Web scraping data for analysis purpose using <a href="http://casperjs.org/" target="_blank">CasperJS</a>.'
                 ],
-                time: 'September 2017 - December 2017',
-                position: 'right'
-            },
-            {
-                tag: 'HP CDG IT Services Morocco',
-                title: 'Customer advisor',
-                description: [
-                    'Customer Advisor for booking at Accor Hotels.'
-                ],
-                time: 'February 2017 - April 2017'
+                time: 'September 2017 - December 2017'
             },
             {
                 tag: 'Kenitra Negoce Technology',
