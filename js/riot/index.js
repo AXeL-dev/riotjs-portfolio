@@ -116,7 +116,7 @@ riot.compile(function() {
                     '✔ Creation of an e-commerce website using the CodeIgniter PHP framework.',
                     '✔ Web scraping data for analysis purpose using <a href="http://casperjs.org/" target="_blank">CasperJS</a>.'
                 ],
-                time: 'September 2017 - December 2017'
+                time: 'October 2017 - November 2017'
             },
             {
                 tag: 'Kenitra Negoce Technology',
