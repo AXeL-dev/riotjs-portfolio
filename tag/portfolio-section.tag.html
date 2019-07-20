@@ -28,7 +28,7 @@
                                         <div class="portfolio-intro-image">
                                             <a class="btn-circle waves-effect portfolio-mfp tooltipped" data-position="top" data-delay="50" data-tooltip="View Photo" href="{ project.image }"><span class="fa fa-picture-o"></span></a>
                                         </div>
-                                        <div class="portfolio-intro-detail">
+                                        <div class="portfolio-intro-detail" show="{ project.link && project.link != 'javascript:void(0);' }">
                                             <a class="btn-circle waves-effect tooltipped" data-position="top" data-delay="50" data-tooltip="View Source" href="{ project.link }" target="_blank"><span class="fa fa-link"></span></a>
                                         </div>
                                     </div>
@@ -84,6 +84,24 @@
                 ]
             },
             {
+                name: 'Distract Me Not',
+                image: 'img/projects/distract-me-not.png',
+                link : 'https://github.com/AXeL-dev/distract-me-not',
+                category: [
+                    'Javascript',
+                    'WebExtension'
+                ]
+            },
+            {
+                name: 'Easy Image Downloader',
+                image: 'img/projects/easy-image-downloader.png',
+                link : 'https://github.com/AXeL-dev/easy-image-downloader',
+                category: [
+                    'Javascript',
+                    'WebExtension'
+                ]
+            },
+            {
                 name: 'CodeIgniter Starter',
                 image: 'img/projects/codeigniter-starter.png',
                 link : 'https://github.com/AXeL-dev/CodeIgniter-Starter',
@@ -107,7 +125,18 @@
                 link : 'https://github.com/AXeL-dev/ZTE-SAT-Tool',
                 category: [
                     'PHP',
-                    'Javascript'
+                    'Javascript',
+                    'Jquery'
+                ]
+            },
+            {
+                name: 'Dolibarr Modules',
+                image: 'img/projects/revamp-my-dolibarr.png',
+                link : 'https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel',
+                category: [
+                    'PHP',
+                    'Javascript',
+                    'Jquery'
                 ]
             },
             {
@@ -117,24 +146,6 @@
                 category: [
                     'Python',
                     'GTK'
-                ]
-            },
-            {
-                name: 'Distract Me Not',
-                image: 'img/projects/distract-me-not.png',
-                link : 'https://github.com/AXeL-dev/distract-me-not',
-                category: [
-                    'Javascript',
-                    'WebExtension'
-                ]
-            },
-            {
-                name: 'Dolibarr Modules',
-                image: 'img/projects/dolibarr.png',
-                link : 'https://www.dolistore.com/en/search?orderby=position&orderway=desc&search_query=axel',
-                category: [
-                    'PHP',
-                    'Javascript'
                 ]
             },
             {
@@ -156,21 +167,21 @@
                 ]
             },
             {
-                name: 'XAMPP Indicator',
-                image: 'img/projects/xampp-indicator.png',
-                link : 'https://github.com/AXeL-dev/xampp-indicator',
+                name: 'OVH CTI Dashboard',
+                image: 'img/projects/ovh-cti.png',
+                link : 'javascript:void(0);',
                 category: [
-                    'Python',
-                    'GTK'
+                    'Javascript',
+                    'AngularJS'
                 ]
             },
             {
-                name: 'Easy Image Downloader',
-                image: 'img/projects/easy-image-downloader.png',
-                link : 'https://github.com/AXeL-dev/easy-image-downloader',
+                name: 'OVH CTI Dashboard Lite (for Raspberry Pi)',
+                image: 'img/projects/ovh-rp.png',
+                link : 'javascript:void(0);',
                 category: [
                     'Javascript',
-                    'WebExtension'
+                    'AngularJS'
                 ]
             },
             {
@@ -180,7 +191,8 @@
                 category: [
                     'PHP',
                     'ASP.Net',
-                    'Javascript'
+                    'Javascript',
+                    'Jquery'
                 ]
             },
             {
@@ -199,15 +211,25 @@
                     'Javascript'
                 ]
             },
-            // {
-            //     name: 'MM Portfolio',
-            //     image: 'img/projects/mm-portfolio.png',
-            //     link : 'javascript:void(0);',
-            //     category: [
-            //         'HTML',
-            //         'CSS'
-            //     ]
-            // },
+            {
+                name: 'MM Portfolio',
+                image: 'img/projects/mm-portfolio.png',
+                link : 'javascript:void(0);',
+                category: [
+                    'HTML',
+                    'CSS',
+                    'Javascript'
+                ]
+            },
+            {
+                name: 'XAMPP Indicator',
+                image: 'img/projects/xampp-indicator.png',
+                link : 'https://github.com/AXeL-dev/xampp-indicator',
+                category: [
+                    'Python',
+                    'GTK'
+                ]
+            },
             // {
             //     name: 'C.N. Blog',
             //     image: 'img/projects/cn-blog.png',
