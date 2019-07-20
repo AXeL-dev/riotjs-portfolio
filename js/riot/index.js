@@ -31,7 +31,7 @@ riot.compile(function() {
             { name: 'jQuery', image: 'img/tech/jquery.png' },
             { name: 'Ajax', image: 'img/tech/ajax.png' },
             { name: 'TypeScript', image: 'img/tech/ts.png' },
-            { name: 'Angular', image: 'img/tech/angular.png' },
+            { name: 'AngularJS', image: 'img/tech/angular.png' },
             { name: 'Riot JS', image: 'img/tech/riot.png' },
             { name: '.Net', image: 'img/tech/dotnet.png' },
             { name: 'SQL Server', image: 'img/tech/sql-server.png' },
