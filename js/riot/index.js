@@ -106,7 +106,7 @@ riot.compile(function() {
                     '✔ Contributing to open-source community. <a href="https://github.com/Jessewb786/Silaty/graphs/contributors" target="_blank">#Silaty</a> <a href="https://github.com/Dolibarr/dolibarr/graphs/contributors" target="_blank">#Dolibarr</a>',
                     '✔ Learning & discovering new technologies, design patterns, best code practices.'
                 ],
-                time: '2017 - 2019',
+                time: '2017 - present',
                 position: 'right'
             },
             {
