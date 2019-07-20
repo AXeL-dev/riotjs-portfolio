@@ -95,7 +95,7 @@ riot.compile(function() {
                     '✔ Setting up an OpenLDAP server to centralise third parties data.',
                     '✔ Doing server administration & backup stuff (ssh, ftp, vnc).'
                 ],
-                time: 'April 2019 - present'
+                time: 'April 2019 - July 2019'
             },
             {
                 tag: 'Freelance',
