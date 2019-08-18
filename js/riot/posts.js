@@ -48,7 +48,7 @@ var blog_posts = [
             <img src="img/posts/phoenix-os-desktop.jpg" alt="Phoenix OS" />
         </p>
         <p class="mgt-10">
-            To try Phoenix OS simply download it & follow the installation steps on the <a href="https://www.phoenixos.com/en/download_x86">official website</a>.
+            To try Phoenix OS simply download it & follow the installation steps on the <a href="http://www.phoenixos.com/en/download_x86">official website</a>.
         </p>
         <p class="mgt-10">
             <a href="https://www.fosshub.com/Phoenix-OS.html">Source</a>
