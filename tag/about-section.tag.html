@@ -36,7 +36,7 @@
             name: 'Denna Anass',
             image: 'img/coder.jpg',
             job: 'Full Stack Developer',
-            age: 24,
+            age: calculateAge('1995-02-25'),
             address: 'Rabat, Morocco',
             email: 'contact.axel.dev@gmail.com',
             website: 'https://axel-dev.github.io/',
@@ -51,5 +51,12 @@
             { icon: 'facebook', link: '#'},
             { icon: 'linkedin', link: '#'}
         ];
+
+        function calculateAge(dateString) {
+            var birthday = new Date(dateString);
+            var ageDifMs = Date.now() - birthday.getTime();
+            var ageDate = new Date(ageDifMs); // miliseconds from epoch
+            return Math.abs(ageDate.getFullYear() - 1970);
+        }
     </script>
 </about-section>
