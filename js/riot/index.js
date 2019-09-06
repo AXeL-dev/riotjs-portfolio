@@ -57,23 +57,23 @@ riot.compile(function() {
             {
                 tag: 'University of Science and Technology Settat',
                 title: 'Professional license in application design and development',
-                time: '2015 - 2016'
+                period: '2015 - 2016'
             },
             {
                 tag: 'ISTA NTIC Hay Salam Sale',
                 title: 'Software development specialized technician',
-                time: '2013 - 2015',
+                period: '2013 - 2015',
                 position: 'right'
             },
             {
                 tag: 'University of Rabat',
                 title: '1st year in physics-chemistry branch',
-                time: '2012 - 2013'
+                period: '2012 - 2013'
             },
             {
                 tag: 'Abderrahim Bouabid High School',
                 title: 'Bachelor\'s degree in physics',
-                time: '2009 - 2012',
+                period: '2009 - 2012',
                 position: 'right'
             }
         ]
@@ -96,7 +96,7 @@ riot.compile(function() {
                     '✔ Setting up an OpenLDAP server to centralise third parties data.',
                     '✔ Doing server administration & backup stuff (ssh, ftp, vnc).'
                 ],
-                time: 'April 2019 - July 2019'
+                period: 'April 2019 - July 2019'
             },
             {
                 tag: 'Freelance',
@@ -107,7 +107,7 @@ riot.compile(function() {
                     '✔ Contributing to open-source community. <a href="https://github.com/Jessewb786/Silaty/graphs/contributors" target="_blank">#Silaty</a> <a href="https://github.com/Dolibarr/dolibarr/graphs/contributors" target="_blank">#Dolibarr</a>',
                     '✔ Learning & discovering new technologies, design patterns, best code practices.'
                 ],
-                time: '2017 - present',
+                period: '2017 - present',
                 position: 'right'
             },
             {
@@ -117,7 +117,7 @@ riot.compile(function() {
                     '✔ Creation of an e-commerce website using the CodeIgniter PHP framework.',
                     '✔ Web scraping data for analysis purpose using <a href="http://casperjs.org/" target="_blank">CasperJS</a>.'
                 ],
-                time: 'October 2017 - November 2017'
+                period: 'October 2017 - November 2017'
             },
             {
                 tag: 'Kenitra Negoce Technology',
@@ -128,7 +128,7 @@ riot.compile(function() {
                     '✔ Using tools like <a href="https://www.atlassian.com/software/jira" target="_blank">Jira</a> for tasks management & <a href="https://git-scm.com/" target="_blank">git</a> for source code commits.',
                     '✔ Administering servers/virtual machines using ssh & VMware.'
                 ],
-                time: 'February 2016 - June 2016',
+                period: 'February 2016 - June 2016',
                 position: 'right'
             },
             {
@@ -137,7 +137,7 @@ riot.compile(function() {
                 description: [
                     'Creating a web application in PHP to simplify script generation and execution from Excel sheets.'
                 ],
-                time: 'February 2015 - April 2015'
+                period: 'February 2015 - April 2015'
             }
         ]
     });
